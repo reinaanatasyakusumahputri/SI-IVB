@@ -56,7 +56,7 @@ Contoh struktur direktori sebagai berikut:
 <table>
      <tr>
           <td align="center">
-                <a href="https://github.com/PBWFEND/SI-IVB/graphs/contributors"><img src="https://contrib.rocks/image?repo=PBWFEND/SI-IVA" alt="Contributors" /></a>
+                <a href="https://github.com/PBWFEND/SI-IVB/graphs/contributors"><img src="https://contrib.rocks/image?repo=PBWFEND/SI-IVB" alt="Contributors" /></a>
           </td>
      </tr>
 </table>
