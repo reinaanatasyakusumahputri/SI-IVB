@@ -2,7 +2,7 @@
 Repository Pemrograman Berbasis Web Front End
 
 <p align="left">
-<a href="#"><img src="https://komarev.com/ghpvc/?username=SI-IBA&color=blueviolet"></a>
+<a href="#"><img src="https://komarev.com/ghpvc/?username=SI-IVB&color=blueviolet"></a>
 <a href="#"><img src="https://img.shields.io/github/issues-pr/PBWFEND/SI-IVB?style=flat-square"></a>
 <a href="#"><img src="https://img.shields.io/github/repo-size/PBWFEND/SI-IVB?style=flat-square"></a>
 <a href="#"><img src="https://img.shields.io/github/commit-activity/w/PBWFEND/SI-IVB?style=flat-square"></a>
@@ -56,7 +56,7 @@ Contoh struktur direktori sebagai berikut:
 <table>
      <tr>
           <td align="center">
-                <a href="https://github.com/PBWFEND/SI-IVA/graphs/contributors"><img src="https://contrib.rocks/image?repo=PBWFEND/SI-IVA" alt="Contributors" /></a>
+                <a href="https://github.com/PBWFEND/SI-IVB/graphs/contributors"><img src="https://contrib.rocks/image?repo=PBWFEND/SI-IVA" alt="Contributors" /></a>
           </td>
      </tr>
 </table>
