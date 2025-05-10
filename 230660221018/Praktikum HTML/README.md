@@ -1,0 +1,1 @@
+Folder ini berisi file-file latihan/praktikum dasar HTML. Setiap file digunakan untuk memahami elemen-elemen penting dalam membangun struktur halaman web.

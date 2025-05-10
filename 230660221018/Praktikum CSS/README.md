@@ -1,0 +1,1 @@
+Folder ini berisi kumpulan file HTML dan CSS yang dimana pada file html nya juga terdapat style css. Masing-masing file ditujukan untuk memahami konsep dasar hingga lanjutan dari styling halaman web.

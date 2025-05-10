@@ -1,0 +1,1 @@
+Folder ini berisi file latihan JavaScript dasar yang digunakan untuk memahami konsep pemrograman JavaScript dalam pembuatan web.
