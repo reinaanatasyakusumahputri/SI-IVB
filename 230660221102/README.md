@@ -1,16 +1,14 @@
-## Hi there 👋
+# Praktikum Jajang Komara - SI-IVB 
 
-<!--
-**230660221102/230660221102** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Repositori ini berisi kumpulan file praktikum yang dikerjakan oleh Jajang Komara sebagai bagian dari mata kuliah di program studi Sistem Informasi (SI-IVB).
 
-Here are some ideas to get you started:
+## Daftar Praktikum
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Berikut adalah daftar direktori yang berisi file-file praktikum:
+
+- **Portofolio**: Berisi file-file yang berkaitan dengan pengembangan portofolio web.
+- **Praktikum #01 - HTML**: Berisi file-file untuk praktikum pertama mengenai dasar-dasar HTML.
+- **Praktikum #02 - CSS**: Berisi file-file untuk praktikum kedua mengenai Cascading Style Sheets (CSS).
+- **Praktikum #03 - JS**: Berisi file-file untuk praktikum ketiga mengenai JavaScript.
+
+Setiap direktori praktikum akan berisi file-file latihan, tugas, atau hasil pekerjaan lainnya yang relevan dengan topik praktikum tersebut.
