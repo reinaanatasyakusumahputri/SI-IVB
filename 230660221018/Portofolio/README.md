@@ -1,4 +1,4 @@
-Folder Portofolio ini berisi seluruh aset pendukung untuk halaman portofolio yang disimpan di folder assets. Berikut struktur dan penjelasannya :  
+Folder Portofolio ini berisi seluruh aset pendukung untuk halaman portofolio yang disimpan di folder assets. Berikut struktur dan penjelasannya:  
 📁 css/  
 Berisi file CSS untuk mengatur tampilan halaman  
 • custom.css – File utama untuk styling halaman seperti warna, layout dan yang lainnya  
