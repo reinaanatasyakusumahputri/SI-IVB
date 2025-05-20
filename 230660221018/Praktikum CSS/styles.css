@@ -1,26 +1,20 @@
-/* Set padding yang berbeda untuk setiap sisi */
-div {
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 40px;
+/* Set halaman margin */
+body.halaman-margin{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
-/* Mengatur padding sebesar 10px untuk semua sisi */
-div {
-  padding: 10px;
-}
-
-/* Mengatur padding sebesar 10px untuk sisi atas dan bawah, dan 20px untuk sisi kiri dan kanan */
-div {
-  padding: 10px 20px;
+.container {
+    width: 50%; /* Mengatur lebar elemen */
+    background-color: #fff; /* Warna latar belakang */
+    padding: 20px; /* Jarak dalam elemen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+    margin: 0 auto; /* Mengatur margin atas/bawah 0 dan tengah secara horizontal */
 }
 
-/* Mengatur padding sebesar 10px untuk sisi atas, 20px untuk sisi kanan, 30px untuk sisi bawah, dan 40px untuk sisi kiri */
-div {
-  padding: 10px 20px 30px 40px;
-}
-
-body {
+/* Set halaman padding */
+body.halaman-padding{
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
@@ -37,3 +31,32 @@ body {
     padding-bottom: 30px; /* Bawah */
     padding-left: 40px;   /* Kiri */
 }
+
+/* Set halaman external */
+h1 {
+  color: blue;
+}
+
+/* Set halaman list */
+.dari-bullet {
+    list-style-type: square; /* Menggunakan kotak sebagai bullet */
+}
+
+.dari-huruf {
+    list-style-type: upper-alpha; /* Menggunakan huruf kapital sebagai nomor */
+}
+
+.dari-angka {
+    list-style-type: decimal; /* Menggunakan angka biasa sebagai nomor */
+}
+
+/* set halaman list style image*/
+/* pada list tidak berurutan (ul) menggunakan sebuah gambar dengan nama icon.png */
+.dari-bullet2 {
+    list-style-image: url('https://icons.iconarchive.com/icons/martz90/hex/16/css-3-icon.png'); /* Gambar sebagai bullet */
+}
+
+ul {
+    padding-left: 20px; /* Memberi jarak pada daftar */
+}
+
