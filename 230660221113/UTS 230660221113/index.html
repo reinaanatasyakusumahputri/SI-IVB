@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portofolio</title>
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <script defer src="assets/js/script.js"></script>
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div id="loader"></div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">My Portofolio</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portofolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="toggle-mode">🌙</button></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <img src="assets/images/Andre.jpg" alt="Profile Photo" class="profile-pic" loading="lazy" />
+      <h1 class="animate">Muhammad Andre Nugraha</h1>
+      <p class="tagline animate">Mahasiswa | Sistem Informasi</p>
+      <div class="social-links animate">
+        <a href="https://www.instagram.com/andrnugrahaa" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/230660221113" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/AndreN4184" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Tentang Saya</h2>
+      <p class="text-center">
+        Saya Seorang mahasiswa semester 4 Prodi Sistem Informasi Fakultas Teknologi Informasi Universitas Sebelas April Sumedang.
+      </p>
+
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h4>Keahlian</h4>
+          <div class="mb-2">HTML <div class="progress"><div class="progress-bar" style="width: 90%">90%</div></div></div>
+          <div class="mb-2">CSS <div class="progress"><div class="progress-bar" style="width: 85%">85%</div></div></div>
+          <div class="mb-2">JavaScript <div class="progress"><div class="progress-bar" style="width: 80%">80%</div></div></div>
+          <div class="mb-2">UI/UX <div class="progress"><div class="progress-bar" style="width: 75%">75%</div></div></div>
+        </div>
+        <div class="col-md-6">
+          <h4>Pendidikan</h4>
+          <ul class="timeline">
+            <li><strong>2023 - Sekarang:</strong> S1 Sistem Informasi - Universitas Sebelas April</li>
+            <li><strong>2020 - 2023:</strong> SMK Negeri 1 Mundu Cirebon</li>
+          </ul>
+
+          <!-- Hobi -->
+          <h4 class="mt-4">Hobi</h4>
+            <ul class="hobi-list">
+            <li><i class="fas fa-motorcycle"></i> Riding</li>
+            <li><i class="fas fa-camera-retro"></i> Fotografi</li>
+            <li><i class="fas fa-football"></i>Sepak Bola</li>
+            <li><i class="fas fa-hiking"></i>Hiking</li>
+            </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Gallery -->
+  <section id="portfolio">
+    <h2>Portofolio</h2>
+    <!-- Filter Buttons -->
+<div class="filter-buttons">
+  <button class="filter-btn" data-filter="design">Desain</button>
+  <button class="filter-btn" data-filter="youtube">Youtube</button>
+   <button class="filter-btn" data-filter="cv">CV</button>
+</div>
+
+<!-- Preview Area -->
+<div id="preview-area" style="margin-top: 20px;"></div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Muhammad Andre Nugraha</p>
+  </footer>
+</body>
+</html>
