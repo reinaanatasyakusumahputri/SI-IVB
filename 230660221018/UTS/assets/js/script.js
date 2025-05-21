@@ -83,7 +83,9 @@ function loadMedia(type) {
     const figmaLinks = [
       "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/OBccJyIlB3Wfi6QCErG9rl/CV-Mobile-App---INTAN-KARTIKA?node-id=0-1&t=zaHEoSul2cQEVTfp-1",
       "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/m0eWbtjDRH326q2QHqqICH/Desain-Web-Coffee?t=qE1n3PWSrCpKkJyB-1",
-      "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/6jCHyrmwElPXxdfDng4J9G/Untitled?t=qE1n3PWSrCpKkJyB-1"
+      "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/6jCHyrmwElPXxdfDng4J9G/Untitled?t=qE1n3PWSrCpKkJyB-1",
+      "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/6qV9LAWhkjuU9FW0yep3dj/Intan-Kartika?m=auto&t=Eza1oOmMeM7cJRrE-1",
+      "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/BGopEiw487ajAPSNLHgKGW/Project-Mockup?m=auto&t=Eza1oOmMeM7cJRrE-1"
     ];
 
     embed = `
@@ -94,6 +96,19 @@ function loadMedia(type) {
           </div>
         `).join('')}
       </div>
+    `;
+    break;
+
+  case "paper":
+    embed = `
+      <div class="media-scroll">
+        <div class="media-card">
+          <iframe src="https://drive.google.com/file/d/1qRflrRjE_XCgv82jNLK1uIlYsS0C-s8B/preview"></iframe>
+        </div>
+        <div class="media-card">
+          <iframe src="https://drive.google.com/file/d/1qUPcYxc6RujJzEoNnCmAQU3-T_b0F2ko/preview"></iframe>
+        </div>
+      </div> 
     `;
     break;
 
