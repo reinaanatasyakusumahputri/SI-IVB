@@ -1,0 +1,328 @@
+/* Base Variables */
+:root {
+    --bg-light: #ffffff;
+    --bg-dark: #101010;
+    --text-light: #000000;
+    --text-dark: #ffffff;
+    --accent: #f84785;
+    --gray: #dcdcdc;
+    --gray-dark: #333;
+    --section-bg-light: #f9f9f9;
+    --section-bg-dark: #1a1a1a;
+    --font: 'Outfit', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font);
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  body.dark-mode .loader {
+    background: var(--bg-dark);
+  }
+  
+  body.dark-mode .about,
+  body.dark-mode .contact {
+    background-color: var(--section-bg-dark);
+  }
+  
+  body.dark-mode .skills .progress {
+    background: var(--gray-dark);
+  }
+  
+  body.dark-mode input,
+  body.dark-mode textarea {
+    background-color: #222;
+    color: #fff;
+    border-color: #444;
+  }
+  
+  /* Loader */
+  .loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--accent);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    align-items: center;
+  }
+  .navbar .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+    margin-bottom: 1rem;
+  }
+  .social-links a {
+    margin: 0 0.5rem;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  /* About */
+  .about {
+    padding: 3rem 1.5rem;
+    background-color: var(--section-bg-light);
+  }
+  
+ /* skill */
+.skills-section, education-section {
+ background-color: rgb(247, 210, 229);
+ padding: 20px;
+ margin-bottom: 30px;
+ border-radius: 15px;
+ box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+ margin-bottom: 20px;
+ font-size: 20px;
+ border-bottom: 2px solid #eee;
+ padding-bottom: 10px;
+}
+
+.skill {
+ margin-bottom: 20px;
+}
+
+.skill span {
+ font-weight: 600;
+ display: inline-block;
+ margin-bottom: 8px;
+ font-size: 16px;
+}
+
+.progress-bar {
+ background: #ddd;
+ border-radius: 30px;
+ overflow: hidden;
+ height: 25px;
+}
+
+.progress {
+ background: #f80080;
+ height: 100%;
+ color: white;
+ text-align: right;
+ padding-right: 10px;
+ line-height: 25px;
+ font-weight: bold;
+ border-radius: 30px 0 0 30px;
+ transition: width 1s ease-in-out;
+}
+
+/* Custom colors */
+.progress.css {
+ background: #fa317b;
+}
+
+.progress.js {
+ background: #f96395;
+ color: #ffffff;
+ 
+}
+  
+/* Skills text color */
+.skills-section {
+  color: var(--text-light);
+}
+
+body.dark-mode .skills-section {
+  color: var(--text-dark);
+}
+
+/* Section background */
+.pengalaman-kerja {
+ background-color: #f8c3e5;
+ padding: 50px 20px;
+ text-align: center;
+}
+
+/* Title */
+.pengalaman-kerja h2 {
+ font-size: 20px;
+ margin-bottom: 30px;
+ background-color: #f8d3e7;
+}
+
+/* Card container */
+.cards {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 30px; 
+}
+
+/* Individual card */
+.card {
+ background-color:   #f9eaf0;
+ border: 2px solid #000;
+ border-radius: 8px;
+ padding: 20px;
+ width: 300px;
+ text-align: left;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+ .cards {
+ flex-direction: column;
+ align-items: center;
+}
+}
+
+/* Hobi Section */
+.hobi {
+  padding: 2rem 1.5rem;
+  background-color: var(--section-bg-light); /* cocokkan dengan tema light/dark */
+  color: var(--text-light);
+}
+
+body.dark-mode .hobi {
+  background-color: var(--section-bg-dark);
+  color: var(--text-dark);
+}
+
+.hobi h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.hobi-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hobi-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.hobi-list i {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+
+  /* Contact */
+  .contact {
+    padding: 3rem 1.5rem;
+    background: #f4f4f4;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+  }
+  input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font);
+    background-color: #fff;
+    color: #000;
+  }
+  button[type="submit"] {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.6rem;
+    }
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.project-grid iframe {
+  width: 80%;
+  height: 200px;
+  border: none;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
