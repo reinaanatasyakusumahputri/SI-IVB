@@ -1,0 +1,233 @@
+/* ========== RESET GLOBAL & TEMA DASAR ========== */
+
+/* Mengatur font utama dan efek scroll yang halus */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Mengatur huruf tebal untuk semua judul */
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* Menghapus garis bawah default pada link dan menambahkan transisi saat di-hover */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Saat link disentuh/hover akan diberi garis bawah */
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========== ANIMASI UMUM & TOMBOL ========== */
+
+/* Memberi efek transisi dan kursor pointer untuk tombol */
+button, .btn {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Saat tombol disentuh akan sedikit transparan */
+button:hover, .btn:hover {
+  opacity: 0.9;
+}
+
+/* ========== TOMBOL GANTI TEMA (DARK MODE) ========== */
+
+/* ======= DARK MODE STYLING ========== */
+
+/* Default (Light Mode) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Saat Dark Mode aktif */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Header dan elemen lainnya saat dark */
+body.dark-mode header {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Tombol tema */
+.btn-theme {
+  background-color: transparent;
+  border: 2px solid #555;
+  color: inherit;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.btn-theme:hover {
+  background-color: #eee;
+}
+
+body.dark-mode .btn-theme:hover {
+  background-color: #333;
+}
+
+/* ========== BAGIAN HERO (BERANDA) ========== */
+
+/* Mengatur latar belakang gradasi biru muda dan padding atas-bawah */
+#beranda {
+  background: linear-gradient(135deg, #f0f8ff, #e6f0fa);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* Gaya untuk foto di beranda (profil) */
+#beranda img {
+  border: 3px solid #0077cc;
+  padding: 4px;
+}
+
+/* ========== SECTION UMUM (JUDUL BAGIAN) ========== */
+
+/* Jarak antar section dan desain judul setiap bagian */
+section {
+  margin-bottom: 2rem;
+}
+
+section h3 {
+  color: #1e3a8a; /* Warna biru tua */
+  border-left: 5px solid #60a5fa; /* Garis kiri berwarna biru muda */
+  padding-left: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+/* ========== FILTER PORTOFOLIO ========== */
+
+/* Gaya tombol filter portofolio */
+#portofolio button {
+  background-color: #dbeafe; /* Biru sangat muda */
+  color: #1e40af; /* Biru tua */
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Saat hover tombol filter */
+#portofolio button:hover {
+  background-color: #bfdbfe;
+}
+
+/* ========== GALERI PROJECT / KARYA ========== */
+
+/* Desain kartu project */
+.project-item {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+/* Efek bayangan dan pembesaran saat hover */
+.project-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul project */
+.portfolio-title {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1e3a8a;
+}
+
+/* Deskripsi project */
+.portfolio-description {
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+/* ========== BAR KETERAMPILAN / SKILL (PROGRESS) ========== */
+
+/* Kontainer luar dari progress bar */
+.progress-container {
+  background-color: #e5e7eb;
+  border-radius: 9999px; /* Membulat sempurna */
+  overflow: hidden;
+  height: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Bagian progress bar yang berjalan (diisi melalui JS/inline style) */
+.progress-bar {
+  height: 0.5rem;
+  border-radius: 9999px;
+}
+
+/* ========== FORMULIR KONTAK ========== */
+
+/* Input dan textarea diberi border dan latar putih */
+form input, form textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Efek saat input aktif / difokuskan */
+form input:focus, form textarea:focus {
+  outline: none;
+  border-color: #60a5fa; /* Border biru saat aktif */
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.2);
+}
+
+/* Tombol kirim formulir */
+form button {
+  border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+}
+
+/* ========== RESPONSIF (LAYAR HP) ========== */
+
+@media (max-width: 640px) {
+  /* Menyembunyikan navigasi utama di layar kecil */
+  nav {
+    display: none !important;
+  }
+
+  /* Mengurangi jarak antar elemen horizontal */
+  .space-x-4 {
+    gap: 0.5rem;
+  }
+
+  /* Mengurangi padding kartu project */
+  .project-item {
+    padding: 0.75rem;
+  }
+
+  /* Menambahkan padding di sisi kiri dan kanan section */
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
