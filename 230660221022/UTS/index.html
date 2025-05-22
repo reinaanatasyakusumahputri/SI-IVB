@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Saya</title>
+
+    <!-- Link Framework CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Link ke file CSS kustom -->
+    <link rel="stylesheet" href="assets/css/costume.css" />
+
+    <!-- Ikon (optional, bisa pakai FontAwesome atau SVG nanti) -->
+</head>
+<body class="bg-white text-gray-800 transition duration-300">
+
+    <!-- ========== HEADER / NAVIGASI ========== -->
+    <header class="fixed w-full bg-white shadow z-50">
+        <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo Personal -->
+            <div class="text-xl font-bold">My Portofolio</div>
+
+            <!-- Menu Navigasi -->
+            <ul class="hidden md:flex space-x-6 font-medium">
+                <li><a href="#about" class="hover:text-blue-500">Tentang Saya</a></li>
+                <li><a href="#education" class="hover:text-blue-500">Pendidikan</a></li>
+                <li><a href="#skills" class="hover:text-blue-500">Skill</a></li>
+                <li><a href="#portfolio" class="hover:text-blue-500">Portofolio</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Kontak</a></li>
+            </ul>
+
+            <!-- Toggle Mode Dark/Light -->
+            <button id="toggle-mode" class="ml-4">🌓</button>
+        </nav>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center pt-24 bg-blue-100">
+        <!-- Foto Profil -->
+        <img src="assets/images/profile/Dian Erwin.jpeg" alt="Foto Profil" class="w-32 h-32 rounded-full shadow-md mb-4 animate_animated animate_fadeIn" />
+
+        <!-- Nama dan Tagline -->
+        <h1 class="text-4xl font-bold mb-2 animate_animated animate_fadeInUp">Halo, Saya Dian Erwin</h1>
+        <p class="text-lg text-gray-600 mb-4 animate_animated animate_fadeInUp">Web Developer | Programmer Junior</p>
+
+        <!-- Social Media Links -->
+        <div class="flex space-x-4 animate_animated animate_fadeInUp">
+            <a href="https://github.com/akhydianerwin" target="_blank"><img src="assets/icons/social/github.png" alt="GitHub" class="w-6 h-6" /></a>
+            <a href="https://www.linkedin.com/in/akhydianerwin" target="_blank"><img src="assets/icons/social/linkedin.png" alt="LinkedIn" class="w-6 h-6" /></a>
+            <a href="https://www.instagram.com/abang.0703" target="_blank"><img src="assets/icons/social/instagram.jpeg" alt="Instagram" class="w-6 h-6" /></a>
+        </div>
+    </section>
+
+    <!-- ========== SECTION TENTANG SAYA ========== -->
+    <section id="about" class="max-w-5xl mx-auto py-16 px-4">
+        <h2 class="text-3xl font-semibold mb-4">Tentang Saya</h2>
+        <p class="text-gray-700 leading-relaxed">
+            Saya adalah mahasiswa Program Studi Sistem Informasi Fakultas Teknologi Informasi yang memiliki minat di bidang pengembangan web, khususnya front-end. 
+            Saya suka belajar hal baru dan bersemangat membuat desain web yang menarik dan fungsional.
+        </p>
+    </section>
+
+    <!-- ========== SECTION PENDIDIKAN ========== -->
+    <section id="education" class="bg-white py-16 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-semibold mb-6">Pendidikan</h2>
+            <ul class="space-y-4">
+                <li>
+                    <h3 class="text-xl font-bold">Universitas Sebelas April Sumedang</h3>
+                    <p class="text-gray-600">S1 Sistem Informasi | 2023 - Sekarang</p>
+                </li>
+                <li>
+                    <h3 class="text-xl font-bold">LPK Ganesha Pratama Sumedang</h3>
+                    <p class="text-gray-600">Jurusan IPA | 2021 - 2022</p>
+                </li>
+                <li>
+                <h3 class="text-xl font-bold">SMK IT Adzkiya Mansyaul Hikam</h3>
+                    <p class="text-gray-600">Jurusan Teknik Komputer Jaringan | 2018 - 2021</p>
+                </li>
+                <li><h3 class="text-xl font-bold">Mts IT Adzkiya Mansyaul Hikam</h3>
+                    <p class="text-gray-600"> 2015 - 2018</p>
+                    </li>
+                    <li><h3 class="text-xl font-bold">SD N Melati</h3>
+                    <p class="text-gray-600">2009 - 2015</p>
+                  </li>
+            </ul>
+        </div>
+    </section>
+
+   <!-- ========== SECTION SKILL (DENGAN ICON, TEKS & BAR SKILL TERGABUNG) ========== -->
+<section id="skills" class="py-16 px-4 bg-white">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-6">Skill</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <!-- Skill Card -->
+      <div class="bg-gray-50 p-4 rounded-lg shadow-md flex flex-col items-center">
+        <img src="assets/icons/skills/leadership.png" class="w-12 h-12 mb-2" alt="leadership">
+        <p class="font-medium mb-2">leadership</p>
+        <div class="w-full bg-gray-300 rounded-full h-3">
+          <div class="bg-blue-600 h-3 rounded-full" style="width: 90%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 p-4 rounded-lg shadow-md flex flex-col items-center">
+        <img src="assets/icons/skills/html.png" class="w-12 h-12 mb-2" alt="html">
+        <p class="font-medium mb-2">HTML</p>
+        <div class="w-full bg-gray-300 rounded-full h-3">
+          <div class="bg-blue-500 h-3 rounded-full" style="width: 80%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 p-4 rounded-lg shadow-md flex flex-col items-center">
+        <img src="assets/icons/skills/speaker.png" class="w-12 h-12 mb-2" alt="Public Speaking">
+        <p class="font-medium mb-2">Public Speaking</p>
+        <div class="w-full bg-gray-300 rounded-full h-3">
+          <div class="bg-yellow-500 h-3 rounded-full" style="width: 65%;"></div>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 p-4 rounded-lg shadow-md flex flex-col items-center">
+        <img src="assets/icons/skills/meeting.png" class="w-12 h-12 mb-2" alt="Teamwork">
+        <p class="font-medium mb-2">Team Work</p>
+        <div class="w-full bg-gray-300 rounded-full h-3">
+          <div class="bg-cyan-500 h-3 rounded-full" style="width: 70%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ========== SECTION PORTFOLIO ========== -->
+    <section id="portfolio" class="bg-gray-100 py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Portofolio</h2>
+
+            <!-- Filter Kategori -->
+            <div class="flex justify-center mb-8 space-x-4">
+                <button class="filter-btn px-4 py-2 bg-blue-500 text-white rounded" data-filter="all">Semua</button>
+                <button class="filter-btn px-4 py-2 bg-gray-300 rounded" data-filter="web">Web</button>
+                <button class="filter-btn px-4 py-2 bg-gray-300 rounded" data-filter="design">Desain</button>
+            </div>
+
+            <!-- Grid Proyek -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="portfolio-gallery">
+                <!-- Contoh Proyek -->
+                <div class="portfolio-item" data-category="web">
+                    <img src="assets/images/project/sekolah.jpeg" alt="project 1" class="w-full h-48 object-cover rounded shadow cursor-pointer">
+                    </a>
+          <h4 class="portfolio-title">Hari Kemerdekaan Indonesia yang ke-76</h4>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="assets/images/project/sekolah1.jpeg" alt="Project 2" class="w-full h-48 object-cover rounded shadow cursor-pointer">
+                </a>
+          <h4 class="portfolio-title">Kelulusan kelas 12 Mas Darussalam angkatan ke 28 </h4>
+                  </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="assets/images/project/sekolah2.jpeg" alt="Project 3" class="w-full h-48 object-cover rounded shadow cursor-pointer">
+                </a>
+          <h4 class="portfolio-title">Halal bilhalal tahun 2025</h4>
+                  </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="assets/images/project/sekolah 3.jpeg" alt="Project 4" class="w-full h-48 object-cover rounded shadow cursor-pointer">
+                </a>
+          <h4 class="portfolio-title">pemuda karang taruna Medal Sagara</h4>
+                  </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="assets/images/project/sekolah4.jpeg" alt="Project 5" class="w-full h-48 object-cover rounded shadow cursor-pointer">
+                </a>
+          <h4 class="portfolio-title">Pelantikan Bantara Mas Darussalam Sumedang</h4>
+                  </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="assets/images/project/sekolah 5.jpeg" alt="Project 6" class="w-full h-48 object-cover rounded shadow cursor-pointer">
+                </a>
+          <h4 class="portfolio-title">Observasi Tugas Kuliah di MPP Sumedang</h4>
+                  </div>
+                <!-- Tambahkan lebih banyak proyek sesuai ketentuan -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION KONTAK ========== -->
+    <section id="contact" class="py-16 px-4">
+        <div class="max-w-xl mx-auto">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Kontak Saya</h2>
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block mb-1 font-medium">Nama</label>
+                    <input type="text" id="name" class="w-full border border-gray-300 p-2 rounded" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-1 font-medium">Email</label>
+                    <input type="email" id="email" class="w-full border border-gray-300 p-2 rounded" required>
+                </div>
+                <div>
+                    <label for="message" class="block mb-1 font-medium">Pesan</label>
+                    <textarea id="message" rows="4" class="w-full border border-gray-300 p-2 rounded" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-gray-900 text-white text-center py-6 mt-16">
+        <p>© 2025 Dian Erwin. Semua hak dilindungi.</p>
+    </footer>
+
+    <!-- Link ke file JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
