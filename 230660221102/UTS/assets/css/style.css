@@ -1,7 +1,7 @@
 /* Custom Properties (for Dark/Light Mode) */
 :root {
     --primary-color: #fda921; 
-    --secondary-color: #6c757d; /* Abu-abu */
+    --secondary-color: #6c757d; 
     --text-color: #333;
     --background-color: #0097b2;
     --card-background: #ffffff;
@@ -10,7 +10,7 @@
 }
 
 body.dark-mode {
-    --primary-color: #8ab4f8; /* Biru muda untuk dark mode */
+    --primary-color: #fda921; 
     --secondary-color: #bdc1c6;
     --text-color: #e0e0e0;
     --background-color: #202124;
@@ -68,11 +68,10 @@ a {
 }
 
 a:hover {
-    color: var(--primary-color); /* Sedikit lebih gelap/terang saat hover */
+    color: var(--primary-color); 
     filter: brightness(1.2);
 }
 
-/* Header/Navigation */
 .header {
     background-color: var(--card-background);
     color: var(--text-color);
@@ -88,12 +87,20 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo {
     font-size: 1.8em;
     font-weight: bold;
     color: var(--primary-color);
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+.site-logo {
+    height: 65px;
+    width: auto; 
 }
 
 .navbar {
@@ -137,7 +144,7 @@ a:hover {
 }
 
 .menu-toggle {
-    display: none; /* Hidden on desktop */
+    display: none;
     flex-direction: column;
     cursor: pointer;
     z-index: 1001;
@@ -156,22 +163,21 @@ a:hover {
     background-color: var(--background-color);
     text-align: center;
     padding: 100px 0;
-    min-height: calc(100vh - 70px); /* Adjust based on header height */
+    min-height: calc(100vh - 70px); 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .hero-content {
-   flex: 1; /* Konten akan mengisi ruang yang tersedia */
-    max-width: 500px; /* Batasi lebar konten teks */
+   flex: 1;
+    max-width: 500px;
     text-align: left;
-    align-items: right; /* Teks rata kiri */
+    align-items: right;
     margin-left: 10px;
-    margin-right: 100px; /* Jarak dari kiri */
+    margin-right: 100px; 
 }
    
-    
 .profile-picture {
     width: 350px;
     height: 350px;
@@ -187,10 +193,9 @@ a:hover {
     
 }
 
-
 .hero-section h1 {
     font-size: 48px;
-    color: #ffffff; /* Warna teks putih agar kontras dengan latar biru */
+    color: #ffffff; 
     margin-bottom: 10px;
     line-height: 1.2;
 }
@@ -201,7 +206,7 @@ a:hover {
 
 .hero-section .tagline {
     font-size: 18px;
-    color: #e0e0e0; /* Warna teks abu-abu muda agar kontras dengan latar biru */
+    color: #e0e0e0;
     line-height: 1.6;
     margin-bottom: 30px;
 }
@@ -222,7 +227,7 @@ a:hover {
     transform: translateY(-5px);
 }
 
-/* About Me Section */
+
 .about-section {
     padding: 80px 0;
     background-color: var(--card-background);
@@ -236,45 +241,44 @@ a:hover {
     text-align: justify;
 }
 
-/* Main Content Area - Untuk mensejajarkan Skills dan Education */
 .main-content-area {
-    background-color: var(--card-background); /* Latar belakang untuk area ini */
+    background-color: var(--card-background); 
     padding: 80px 0;
     box-shadow: 0 2px 10px var(--shadow-color);
     margin-bottom: 40px;
 }
 
 .content-wrapper {
-    display: flex; /* Menggunakan Flexbox untuk mensejajarkan */
-    gap: 60px; /* Jarak antara kolom Skills dan Education */
-    flex-wrap: wrap; /* Izinkan wrapping di layar kecil */
-    justify-content: center; /* Pusatkan item saat wrap */
-    align-items: flex-start; /* Sejajarkan item di bagian atas */
+    display: flex; 
+    gap: 60px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
 }
 /* Skills Section */
 .skills-section {
-    flex: 1; /* Memberikan ruang yang sama */
-    min-width: 300px; /* Lebar minimum agar tidak terlalu sempit */
-    max-width: 550px; /* Lebar maksimum untuk kolom skill */
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 550px;
     padding: 20px;
-    background-color: var(--background-color); /* Contoh background per section */
+    background-color: var(--background-color); 
     border-radius: 10px;
     box-shadow: 0 4px 15px var(--shadow-color);
 }
 
 .skills-section .section-title {
     color: var(--primary-color);
-    text-align: left; /* Sesuaikan agar rata kiri */
-    margin-left: 0; /* Hapus margin yang mungkin ada dari section-title global */
+    text-align: left; 
+    margin-left: 0; 
     font-size: 30px;
 }
 .skills-section .section-title::after {
-    left: 0; /* Posisikan garis bawah di kiri */
+    left: 0; 
     transform: translateX(0);
 }
 
 .skill-item {
-    margin-bottom: 25px; /* Jarak antar skill */
+    margin-bottom: 25px; 
 }
 
 .skill-name {
@@ -287,41 +291,40 @@ a:hover {
 
 .progress-bar-container {
     background-color: var(--border-color);
-    height: 12px; /* Tebal progress bar */
+    height: 12px; 
     border-radius: 6px;
     overflow: hidden;
-    position: relative; /* Untuk memposisikan persen */
+    position: relative; 
 }
 
 .progress-bar {
     height: 100%;
     background-color: var(--primary-color);
     border-radius: 6px;
-    width: 0; /* Akan diatur oleh JS */
-    transition: width 1.5s ease-out; /* Animasi progres */
+    width: 0; 
+    transition: width 1.5s ease-out; 
 }
 
 .progress-percent {
     position: absolute;
     top: 50%;
-    right: 10px; /* Posisikan persen di kanan dalam bar */
+    right: 10px; 
     transform: translateY(-50%);
     font-size: 0.9em;
     font-weight: bold;
-    color: var(--text-color); /* Warna teks persen */
-    background-color: transparent; /* Agar transparan */
+    color: var(--text-color); 
+    background-color: transparent; 
     padding: 0 5px;
     border-radius: 3px;
-    z-index: 2; /* Pastikan di atas bar */
+    z-index: 2; 
 }
 
-/* Riwayat Pendidikan Section */
 .education-section {
-    flex: 1; /* Memberikan ruang yang sama */
-    min-width: 300px; /* Lebar minimum */
-    max-width: 550px; /* Lebar maksimum untuk kolom education */
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 550px; 
     padding: 20px;
-    background-color: var(--background-color); /* Contoh background per section */
+    background-color: var(--background-color); 
     border-radius: 10px;
     box-shadow: 0 4px 15px var(--shadow-color);
 }
@@ -339,51 +342,51 @@ a:hover {
 
 .education-timeline {
     position: relative;
-    padding-left: 45px; /* Ruang untuk garis vertikal dan ikon */
+    padding-left: 45px; 
 }
 
 .education-timeline::before {
     content: '';
     position: absolute;
-    left: 20px; /* Posisi garis vertikal */
+    left: 20px; 
     top: 0;
     width: 2px;
     height: 100%;
-    background-color: var(--border-color); /* Warna garis vertikal */
+    background-color: var(--border-color); 
 }
 
 .timeline-item {
     position: relative;
     margin-bottom: 50px;
-    padding-left: 25px; /* Ruang untuk konten setelah ikon */
-    display: flex; /* Untuk mensejajarkan ikon dan konten */
-    align-items: flex-start; /* Sejajarkan item di bagian atas */
+    padding-left: 25px; 
+    display: flex; 
+    align-items: flex-start;
 }
 
 .timeline-icon {
     position: absolute;
-    left: -5px; /* Sesuaikan posisi ikon agar di garis */
-    top: 0px; /* Posisikan ikon di atas */
-    width: 40px; /* Ukuran area ikon */
+    left: -5px; 
+    top: 0px; 
+    width: 40px; 
     height: 40px;
-    background-color: var(--primary-color); /* Latar belakang lingkaran ikon */
+    background-color: var(--primary-color); 
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 0 4px var(--card-background); /* Cincin di sekitar ikon */
+    box-shadow: 0 0 0 4px var(--card-background); 
     z-index: 1;
 }
 
 .timeline-icon img {
-    width: 80px; /* Ukuran gambar ikon */
+    width: 80px; 
     height: 80px;
     object-fit: contain;
     
 }
 
 .timeline-content {
-    flex: 1; /* Konten mengisi sisa ruang */
+    flex: 1; 
 }
 
 .timeline-content h4 {
@@ -404,12 +407,12 @@ a:hover {
 
 .timeline-content .timeline-years {
     font-size: 0.9em;
-    color: #ccc;
+    color: #ffffff;
     margin-top: 5px;
 }
 
 
-/* Portfolio Gallery Section */
+
 .portfolio-section {
     padding: 80px 0;
     background-color: var(--background-color);
@@ -521,6 +524,9 @@ a:hover {
 
 .contact-form .form-group {
     margin-bottom: 20px;
+    max-width: 570px;
+    
+    
 }
 
 .contact-form label {
@@ -537,7 +543,7 @@ a:hover {
     padding: 12px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    background-color: var(--background-color); /* Ensure input background changes with dark mode */
+    background-color: var(--background-color); 
     color: var(--text-color);
     font-size: 1em;
     transition: border-color 0.3s ease;
@@ -556,10 +562,10 @@ a:hover {
 }
 
 .contact-form .error-message {
-    color: #dc3545; /* Red for errors */
+    color: #dc3545; 
     font-size: 0.9em;
     margin-top: 5px;
-    display: none; /* Hidden by default */
+    display: none;
 }
 
 .contact-form .submit-btn {
@@ -584,7 +590,7 @@ a:hover {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
-    color: #28a745; /* Green for success */
+    color: #28a745; 
 }
 
 /* Footer */
@@ -617,7 +623,7 @@ a:hover {
 .loading-overlay.hidden {
     opacity: 0;
     visibility: hidden;
-    pointer-events: none; /* Allow interaction with content underneath */
+    pointer-events: none; 
 }
 
 .spinner {
@@ -661,11 +667,11 @@ a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
-        display: none; /* Hide regular nav */
+        display: none; 
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 70px; /* Adjust based on header height */
+        top: 70px; 
         left: 0;
         background-color: var(--card-background);
         box-shadow: 0 5px 10px var(--shadow-color);
@@ -673,7 +679,7 @@ a:hover {
     }
 
     .navbar.active {
-        display: flex; /* Show when active */
+        display: flex; 
     }
 
     .navbar ul {
@@ -686,16 +692,16 @@ a:hover {
     }
 
     .menu-toggle {
-        display: flex; /* Show menu toggle */
+        display: flex; 
     }
 
     .header .container {
-        flex-wrap: wrap; /* Allow wrapping for logo and toggle */
+        flex-wrap: wrap; 
         justify-content: space-between;
     }
 
     .dark-mode-toggle {
-        margin-left: auto; /* Push to right */
+        margin-left: auto; 
     }
 
     .hero-section {
@@ -741,7 +747,7 @@ a:hover {
     }
 
     .portfolio-grid {
-        grid-template-columns: 1fr; /* Stack projects on small screens */
+        grid-template-columns: 1fr; 
     }
 
     .filter-btn {

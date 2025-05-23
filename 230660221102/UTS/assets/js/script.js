@@ -22,10 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Loading Animation ---
     window.addEventListener('load', () => {
-        // Simulasikan loading agar terlihat (hapus setTimeout untuk produksi)
         setTimeout(() => {
             loadingOverlay.classList.add('hidden');
-        }, 500); // Tunda 0.5 detik sebelum menyembunyikan
+        }, 500); 
     });
 
     // --- Dark/Light Mode Toggle ---
@@ -36,8 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
             darkModeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
         }
     }
-
-
 
     darkModeToggle.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
@@ -101,12 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Lightbox Initialization (using SimpleLightbox) ---
-    // Make sure jQuery is loaded before SimpleLightbox
     $(function() {
         if (typeof $.fn.simpleLightbox !== 'undefined') {
             $('.portfolio-grid a.lightbox-trigger').simpleLightbox({
-                navText: ['&lsaquo;','&rsaquo;'], // Custom navigation text
-                captionsData: 'alt', // Use alt attribute for captions
+                navText: ['&lsaquo;','&rsaquo;'], 
+                captionsData: 'alt', 
                 captionDelay: 250
             });
         } else {
@@ -117,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Form Validation ---
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault(); // Prevent actual form submission
+        e.preventDefault(); 
 
         let isValid = true;
 
@@ -166,12 +162,12 @@ document.addEventListener('DOMContentLoaded', () => {
             formStatus.textContent = 'Mengirim pesan...';
             setTimeout(() => {
                 formStatus.textContent = 'Pesan berhasil dikirim! Terima kasih.';
-                formStatus.style.color = '#28a745'; // Green
-                contactForm.reset(); // Clear form fields
+                formStatus.style.color = '#28a745'; 
+                contactForm.reset(); 
             }, 1500);
         } else {
             formStatus.textContent = 'Mohon perbaiki kesalahan dalam formulir.';
-            formStatus.style.color = '#dc3545'; // Red
+            formStatus.style.color = '#dc3545'; 
         }
     });
 
@@ -185,30 +181,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Animate elements
                 if (entry.target.classList.contains('animate-fade-in') || entry.target.classList.contains('animate-slide-up')) {
                     entry.target.classList.add('animated');
-                    observer.unobserve(entry.target); // Stop observing once animated
+                    observer.unobserve(entry.target); 
                 }
 
                 // Animate skill bars when visible
                 if (entry.target.classList.contains('progress-bar-container')) {
                     const progressBar = entry.target.querySelector('.progress-bar');
-                    const skillPercentage = parseInt(progressBar.style.width); // Get percentage from inline style
+                    const skillPercentage = parseInt(progressBar.style.width); 
                     if (!isNaN(skillPercentage)) {
                         progressBar.style.width = skillPercentage + '%';
                     }
-                    observer.unobserve(entry.target); // Stop observing once animated
+                    observer.unobserve(entry.target); 
                 }
-
-                // Lazy load images (if any were specifically marked for JS lazy loading, though HTML `loading="lazy"` is preferred)
-                // For this example, we rely on HTML's native lazy loading.
-                // If you had custom lazy loading, you might do:
-                // if (entry.target.tagName === 'IMG' && entry.target.dataset.src) {
-                //     entry.target.src = entry.target.dataset.src;
-                //     entry.target.removeAttribute('data-src');
-                //     observer.unobserve(entry.target);
-                // }
             }
         });
     }, observerOptions);
@@ -220,10 +206,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.progress-bar-container').forEach(container => {
         observer.observe(container);
     });
-
-    // Optional: Observe images for lazy loading if not using native HTML `loading="lazy"`
-    // document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-    //     observer.observe(img);
-    // });
 });
 
