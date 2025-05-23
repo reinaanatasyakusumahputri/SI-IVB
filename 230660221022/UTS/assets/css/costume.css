@@ -1,0 +1,119 @@
+/* ========== ANIMASI LOADING ========== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgb(103, 216, 178);
+  z-index: 9999;
+  animation: fadeOut 1s ease 1s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* ========== SMOOTH SCROLLING ========== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========== DARK MODE STYLES ========== */
+body.dark {
+  background-color: #1a202c;
+  color: #7098cc;
+}
+
+body.dark header {
+  background-color: #2d3748;
+}
+
+body.dark section {
+  background-color: #2d3748;
+}
+
+body.dark .text-gray-600 {
+  color: #cbd5e0 !important;
+}
+
+body.dark .text-gray-700 {
+  color: #e2e8f0 !important;
+}
+
+body.dark .bg-white {
+  background-color: #2d3748 !important;
+}
+
+body.dark .bg-gray-100 {
+  background-color: #1a202c !important;
+}
+
+body.dark .bg-gray-50 {
+  background-color: #4a5568 !important;
+}
+
+body.dark .bg-gray-300 {
+  background-color: #718096 !important;
+}
+
+body.dark .bg-gray-900 {
+  background-color: #000 !important;
+}
+
+body.dark .text-white {
+  color: #fff;
+}
+
+/* ========== RESPONSIVE NAV ========== */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  nav .menu-toggle {
+    display: block;
+  }
+}
+
+/* ========== FORM STYLE ========== */
+input,
+textarea {
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 1px #4299e1;
+}
+
+/* ========== PORTFOLIO HOVER EFFECT ========== */
+.portfolio-item:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 8px;
+  color: #333;
+}
+
+body.dark .portfolio-title {
+  color: #fff;
+}
+
+/* ========== TOMBOL FILTER AKTIF ========== */
+.filter-btn.active {
+  background-color: #1d4ed8 !important;
+  color: white;
+}
+
+/* ========== CUSTOM TRANSISI UMUM ========== */
+.transition {
+  transition: all 0.3s ease;
+}
