@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Saya</title>
+
+  <!-- Link ke Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Link ke Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Link ke file CSS kustom -->
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+
+  <!-- ANIMASI LOADING -->
+  <div id="loader" class="fixed inset-0 bg-white z-50 flex items-center justify-center dark:bg-gray-900">
+    <span class="text-xl animate-pulse">Memuat halaman...</span>
+  </div>
+
+  <!-- HEADER / NAVIGASI -->
+  <header class="fixed w-full z-40 bg-white dark:bg-gray-800 shadow">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <!-- Logo dan Judul -->
+      <div class="flex items-center gap-2">
+        <img src="assets/images/logo personal.svg" alt="Logo" class="w-8 h-8" />
+        <h1 class="font-bold text-lg">My Portofolio</h1>
+      </div>
+
+      <!-- Menu Navigasi -->
+      <nav class="space-x-4 hidden md:block">
+        <a href="#about" class="hover:text-blue-500">About Me</a>
+        <a href="#education" class="hover:text-blue-500">Education</a>
+        <a href="#experience" class="hover:text-blue-500">Experience</a>
+        <a href="#skill" class="hover:text-blue-500">Skill</a>
+        <a href="#portofolio" class="hover:text-blue-500">Portofolio</a>
+        <a href="#contact" class="hover:text-blue-500">Contact Me</a>
+      </nav>
+
+      <!-- Tombol Toggle Dark/Light Mode -->
+<button id="toggle-theme" class="btn-theme">🌓</button>
+  </header>
+
+  <main class="pt-20">
+    <!-- HERO SECTION | HALAMAN UTAMA | HALAMAN WELCOME -->
+    <section class="text-center py-16" id="beranda">
+      <img src="assets/images/foto profil.jpg" alt="Foto Profil" class="w-32 h-32 mx-auto rounded-full animate__animated animate__bounce" />
+      <h2 class="mt-4 text-2xl font-bold">Hallo, Saya Deyna Angeliawati Zahara</h2>
+      <p class="text-blue-500">"Konsistensi dan keinginan untuk terus belajar adalah kunci kesuksesan"</p>
+
+      <!-- Link Media Sosial -->
+      <div class="mt-4 flex justify-center gap-4">
+        <a href="https://github.com/deynaangelyzahara"><img src="assets/icon_web/github.png" class="w-6" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/deynaangeliawatizahara"><img src="assets/icon_web/linkedin.png" class="w-6" alt="LinkedIn" /></a>
+        <a href="https://www.instagram.com/deyna_angelyz"><img src="assets/icon_web/instagram.png" class="w-6" alt="Instagram" /></a>
+        <a href="https://www.facebook.com/Deyna Angeliawati Zahara"><img src="assets/icon_web/facebook.png" class="w-6" alt="facebook" /></a>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="py-10 px-6 max-w-3xl mx-auto">
+      <h3 class="text-xl font-bold mb-4">About Me</h3>
+      <p>Saya merupakan mahasiswi Program Studi S1 Sistem Informasi di Fakultas Teknologi Informasi Universitas Sebelas April. Saya mampu mengatur prioritas dengan baik, bekerja secara kolaboratif, dan menyampaikan ide secara jelas. Hal tersebut mendukung saya untuk bekerja secara efektif dan memberikan konstribusi positif dalam tim.</p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="py-10 px-6 max-w-3xl mx-auto">
+      <h3 class="text-xl font-bold mb-4">Education</h3>
+      <ul class="list-disc ml-5">
+        <li>Universitas Sebelas April – Sistem Informasi (2023 - Sekarang)</li>
+        <li>MAN 1 Sumedang – Ilmu Pengetahuan Alam (2020 - 2023)</li>
+        <li>SMPN 2 Tanjungkerta – (2018 - 2020)</li>
+      </ul>
+    </section>
+
+        <!-- EXPERIENCE -->
+    <section id="experience" class="py-10 px-6 max-w-3xl mx-auto">
+      <h3 class="text-xl font-bold mb-4">Experience</h3>
+      <ul class="space-y-3">
+        <li>
+          <strong>Unit Kegiatam Mahasiswa Unsap Radio</strong><br />
+          2023 – Sekarang<br />
+          Aktif sebagai anggota dan banyak terlibat dalam kepanitiaan di berbagai event.
+        </li>
+        <li>
+          <strong>Sekretaris Paskibra - MAN 1 Sumedang</strong><br />
+          2021 – 2022<br />
+          Bertanggung jawab memanage seluruh aktifitas administrasi organisasi.
+        </li>
+        <li>
+          <strong>Paskibraka dan PPI Duta Pancasila - Kabupaten Sumedang</strong><br />
+          2021 <br />
+          Berkesampatan menjadi Paskibraka tingkat Kabupaten dan aktif dalam beberapa kepanitiaan Purna Paskibraka.
+        </li>
+        <li>
+          <strong>Ketua Paskibra - SMPN 2 Tanjungkerta</strong><br />
+          2018 – 2019 <br />
+          Menerima tanggung jawab untuk memimpin atau mengarahkan seluruh kegiatan organisasi.
+        </li>
+      </ul>
+    </section>
+
+    <!-- SKILL (PROGRESS BAR DAN ICON) -->
+    <section id="skill" class="py-10 px-6 max-w-3xl mx-auto">
+    <h3 class="text-xl font-bold mb-4">Skill</h3>
+    <div>
+        <div class="flex items-center gap-4 mb-2">
+            <img src="assets/icon_web/teamwork.png" class="w-8 h-8" alt="HTML" />
+            <p class="font-medium">Team Work</p>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+            <div class="bg-blue-500 h-2 rounded-full w-5/6"></div>
+        </div>
+
+        <div class="flex items-center gap-4 mb-2">
+            <img src="assets/icon_web/time-management.png" class="w-8 h-8" alt="CSS" />
+            <p class="font-medium">Time Management</p>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+            <div class="bg-green-500 h-2 rounded-full w-3/4"></div>
+        </div>
+
+        <div class="flex items-center gap-4 mb-2">
+            <img src="assets/icon_web/leadership.png" class="w-8 h-8" alt="JavaScript" />
+            <p class="font-medium">Leadership</p>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+            <div class="bg-yellow-400 h-2 rounded-full w-2/4"></div>
+        </div>
+
+        <div class="flex items-center gap-4 mb-2">
+            <img src="assets/icon_web/communication.png" class="w-8 h-8" alt="HTML" />
+            <p class="font-medium">Communication</p>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+            <div class="bg-blue-500 h-2 rounded-full w-2/3"></div>
+        </div>
+
+        <div class="flex items-center gap-4 mb-2">
+            <img src="assets/icon_web/ms_office.png" class="w-8 h-8" alt="CSS" />
+            <p class="font-medium">Microsoft Office</p>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+            <div class="bg-green-500 h-2 rounded-full w-3/4"></div>
+        </div>
+
+        <div class="flex items-center gap-4 mb-2">
+            <img src="assets/icon_web/database.png" class="w-8 h-8" alt="JavaScript" />
+            <p class="font-medium">Database Management Sistem</p>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+            <div class="bg-yellow-400 h-2 rounded-full w-2/5"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALERI PORTOFOLIO -->
+    <section id="portofolio" class="py-10 px-6 max-w-6xl mx-auto">
+      <h3 class="text-xl font-bold mb-4">Portofolio</h3>
+
+      <!-- Filter Kategori -->
+      <div class="flex gap-4 mb-4">
+        <button onclick="filterGallery('all')">Semua</button>
+        <button onclick="filterGallery('project')">Project</button>
+        <button onclick="filterGallery('achievement')">Achievement</button>
+        <button onclick="filterGallery('activity')">Activity</button>
+      </div>
+
+      <!-- Grid Galeri Proyek -->
+      <div id="gallery" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Proyek 1 -->
+        <div class="project-item" data-category="activity">
+          <a href="https://www.instagram.com/reel/C7Yrm_yPY0Z/?igsh=MW41czZ2b3FsNXpycg==" target="_blank">
+          <img src="assets/images/mc seminar.jpg" class="w-full rounded cursor-pointer" alt="Proyek 1" />
+          </a>
+          <h3 class="portfolio-title">MC Seminar Public Speaking </h3>
+          <p class="portfolio-description">Berpengalaman sebagai MC dalam acara seminar Public Speaking UKM Unsap Radio pada tahun 2024 yang dihadiri oleh masyarakat di Kabupaten Sumedang. Narasumber yang dihadirkan adalah News Anchor MNC Media Group sekaligus Mojang Pinilih Kabupaten Sumedang. Saya bertugas memastikan kelancaran acara dan interaksi yang aktif dengan peserta.</p>
+        </div>
+
+        <!-- Proyek 2 -->
+        <div class="project-item" data-category="activity">
+          <a href="https://www.instagram.com/reel/CSgdJikghGS/?igsh=MWZ6enN0enlmNnJmbg==" target="_blank">
+          <img src="assets/images/paskibraka.JPG" class="w-full rounded cursor-pointer" alt="Proyek 2" />
+          </a>
+          <h3 class="portfolio-title">Paskibraka dan PPI Duta Pancasila</h3>
+          <p class="portfolio-description">Melatih kedisiplinan dan kerja sama tim melalui kesempatan terpilih dan dilantik sebagai anggota Paskibraka dan Purna Paskibraka Indonesia Duta Pancasila tingkat Kabupaten Sumedang pada tahun 2021.</p>
+        </div>
+
+        <!-- Proyek 3 -->
+        <div class="project-item" data-category="project">
+          <a href="https://www.academia.edu/126911950/STRATEGI_PEMASARAN_BISNIS_CILOK_JELETOT_MOLOTOT_" target="_blank">
+          <img src="assets/images/proposal-bisnis.png" class="w-full rounded cursor-pointer" alt="Proyek 3" />
+          </a>
+          <h3 class="portfolio-title">Proposal Bisnis "Cilok Jeletot Molotot</h3>
+          <p class="portfolio-description">Menganalisis dan menyusunan proposal strategi pemasaran bersama rekan tim untuk bisnis kuliner, khususnya kuliner khas daerah.</p>
+        </div>
+
+        <!-- Proyek 4 -->
+        <div class="project-item" data-category="achievement">
+          <a href="#" target="_blank"></a>
+          <img src="assets/images/keterampilan-komputer.png" class="w-full rounded cursor-pointer" alt="Proyek 4" />
+          </a>
+          <h3 class="portfolio-title">Sertifikat Keterampilan Komputer</h3>
+          <p class="portfolio-description">Sertifikasi dalam penguasaan dasar-dasar aplikasi komputer dan Microsoft Office.</p>
+        </div>
+
+        <!-- Proyek 5 -->
+        <div class="project-item" data-category="activity">
+          <a href="#" target="_blank"></a>
+          <img src="assets/images/orientasi.png" class="w-full rounded cursor-pointer" alt="Proyek 5" />
+          </a>
+          <h3 class="portfolio-title">Pemateri Masa Orientasi Paskibra</h3>
+          <p class="portfolio-description">Berperan sebagai pemateri Wawasan Kebangsaan dalam kegiatan Masa Orientasi Paskibra di MAN 1 Sumedang pada tahun 2024. Agar dapat mengenal jati diri kita sebagai bangsa Indonesia, maka harus mulai dari sejarahnya. Seperti kata Bung Karno, "JASMERAH" Jangan Lupakan Sejarah.</p>
+        </div>
+
+        <!-- Proyek 6 -->
+        <div class="project-item" data-category="achievement">
+          <a href="#" target="_blank"></a>
+          <img src="assets/images/story-telling-competition.png" class="w-full rounded cursor-pointer" alt="Proyek 6" />
+          </a>
+          <h3 class="portfolio-title">Story Telling Competition</h3>
+          <p class="portfolio-description">Meraih juara kedua dalam story telling competition tingkat Kabupaten tahun 2019 yang di adakan oleh SMA Negeri Situraja.</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- TOMBOL LIHAT CV DAN VIDEO -->
+      <div class="mt-6 text-center space-x-4">
+        <!-- Tombol Lihat CV -->
+        <a href="assets/dokumen pendukung/CV.jpg" target="_blank" class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-700 transition">
+          📄 Lihat CV Saya
+        </a>
+
+        <!-- Tombol Lihat Video -->
+        <a href="assets/dokumen pendukung/introduction.mp4" target="_blank" class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-500 transition">
+          🎥 My Introduction Video
+        </a>
+      </div>
+
+    <!-- KONTAK -->
+    <section id="contact" class="py-10 px-6 max-w-3xl mx-auto">
+      <h3 class="text-xl font-bold mb-4">Contact Me</h3>
+      <form id="contactForm" class="space-y-4">
+        <input type="text" name="name" placeholder="Nama Lengkap" class="w-full p-2 border" required />
+        <input type="email" name="email" placeholder="Email Aktif" class="w-full p-2 border" required />
+        <textarea name="message" placeholder="Pesan Anda" class="w-full p-2 border" required></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+<footer class="footer">
+  <p>© 2025</p>
+</footer>
+
+  <!-- Link ke file JavaScript -->
+  <script src="assets/js/script.js"></script>
+  </body>
+</html>
