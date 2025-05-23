@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Pribadi</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+  <header class="site-header">
+    <h1 class="site-title">Portofolio Pribadi</h1>
+    <button class="toggle-button" onclick="toggleMode()">🌙 Mode Gelap</button>
+  </header>
+
+  <main>
+    <section class="profile">
+      <img src="profil.jpeg" alt="Foto Profil" class="profile-img">
+      <h2 class="profile-name">Nazwa</h2>
+      <p class="profile-role">Web Developer & Creative Designer</p>
+    </section>
+
+    <section class="intro">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="intro-box">
+        <p>Selamat datang di portofolio saya! Saya adalah seorang pengembang web yang penuh semangat.</p>
+        <blockquote>
+          <p>"Kemenangan adalah milik yang paling gigih."</p>
+          <footer>&mdash; <cite>Napoleon Bonaparte</cite></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="pengalaman">
+      <h2 class="section-title">Pengalaman</h2>
+      <div class="pengalaman">
+        <h3>Lomba membuat komik digital</h3>
+        <p>Peserta Festival dan Lomba Seni Siswa Nasional (FLS2N) pada Juli-Agustus 2022.</p>
+      </div>
+      <div class="pengalaman">
+        <h3>Lomba Membuat Poster</h3>
+        <p>Peserta Lomba Desain Produk HIMA SE-A FAPERTA UNWIM pada September 2022</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2 class="section-title">Kontak</h2>
+      <p>Email: nazwaumairanr28@gmail.com</p>
+      <p>Instagram: @nzwa.unr</p>
+    </section>
+  </main>
+
+  <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">⬆️ Back to Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
