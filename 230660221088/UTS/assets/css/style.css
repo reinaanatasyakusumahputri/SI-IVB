@@ -1,0 +1,454 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+body {
+    font-family: Arial, sans-serif; /* Set font family */
+    line-height: 1.6; /* Set line height for readability */
+    background: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color */
+    padding: 20px; /* Add padding around the body */
+    transition: background 0.3s, color 0.3s; /* Smooth transition for dark mode */
+}
+body.dark {
+    background: #121212; /* Dark background for dark mode */
+    color: #f1f1f1; /* Light text color for dark mode */
+}
+body.dark header {
+    background: #1e1e1e; /* Dark header background in dark mode */
+}
+body.dark .project {
+    background: #2a2a2a; /* Dark project background in dark mode */
+}
+body.dark input,
+body.dark textarea {
+    background: #1e1e1e; /* Dark input background in dark mode */
+    color: #fff; /* Light text color in dark mode */
+    border: 1px solid #555; /* Dark border in dark mode */
+}
+body.dark .download-btn {
+    background: #444; /* Dark button background in dark mode */
+}
+body.dark .download-btn:hover {
+    background: #666; /* Dark button hover effect in dark mode */
+}
+
+/* Header Styles */
+header {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap */
+    background: #333; /* Dark background for header */
+    color: #fff; /* White text color */
+    padding: 15px 20px; /* Padding for header */
+    position: sticky; /* Sticky header */
+    top: 0; /* Stick to the top */
+    z-index: 999; /* Ensure header is above other elements */
+}
+header h1 {
+    font-size: 1.5rem; /* Set font size for header title */
+}
+#menu-toggle {
+    display: none; /* Hide menu toggle button by default */
+    background: none; /* No background */
+    border: none; /* No border */
+    color: #fff; /* White text color */
+    font-size: 1.8rem; /* Font size for toggle button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 10px; /* Margin to the left */
+}
+nav ul {
+    list-style: none; /* Remove default list style */
+    display: flex; /* Use flexbox for navigation */
+    gap: 20px; /* Space between items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Navigation Link Styles */
+nav ul li a {
+    color: #fff; /* Set the text color to white */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+nav ul li a:hover {
+    color: #ccc; /* Change color on hover for better visibility */
+}
+/* Burger menu */
+@media (max-width: 768px) {
+  nav#nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position:absolute;
+    top: 60px;
+    right: 20px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  nav#nav-menu.show {
+    display: flex;
+  }
+  #menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+  header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  header li {
+    margin: 10px 0;
+  }
+}
+/*burger menu normal screen */
+@media (min-width: 769px) {
+  #menu-toggle {
+    display: none;
+  }
+  nav#nav-menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    box-shadow: none;
+  }
+  nav#nav-menu ul {
+    display: flex;
+    gap: 1rem;
+  }
+  nav#nav-menu li {
+    margin: 0;
+  }
+}
+
+/* Profile Image Styles (ensuring fixed size and circular shape) */
+#profile-image-container {
+    position: fixed; /* Fixed position */
+    top: 20px; /* Position from top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    transition: 0.5s; /* Smooth transition */
+    z-index: 1000; /* Ensure above other elements */
+}
+#profile-image {
+    width: 120px; /* Set fixed width */
+    height: 120px; /* Set fixed height */
+    border-radius: 50%; /* Circular image */
+    border: 3px solid #fff; /* White border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: 0.5s; /* Smooth transition */
+}
+#profile-image-container.shrink {
+    top: 10px; /* Adjust position when shrunk */
+    left: 20px; /* Adjust position when shrunk */
+    transform: none; /* Remove centering */
+}
+
+/* Hero Section Styles */
+#hero {
+    text-align: center; /* Center text */
+    padding: 50px 20px; /* Padding for hero section */
+    background: #444; /* Dark background for hero section */
+    color: #fff; /* White text color */
+}
+.social-media-links {
+    margin-top: 20px; /* Space above social media links */
+}
+.social-media-links a {
+    color: #fff; /* White text color for links */
+    margin: 0 10px; /* Space between links */
+    text-decoration: none; /* No underline */
+}
+.social-media-links a:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+/* About Me Section Styles */
+#about {
+    margin-top: 60px; /* Space above sections */
+    padding: 20px 0; /* Padding for sections */
+    max-width: 800px; /* Max width for sections */
+    margin-inline: auto; /* Center sections */
+}
+.skills {
+    margin-top: 20px; /* Space above skills */
+}
+.skill {
+    margin-bottom: 10px; /* Space between skills */
+}
+.progress-bar {
+    background: #ccc; /* Light background for progress bar */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+}
+.progress {
+    height: 10px; /* Height of progress */
+    background: #333; /* Dark background for progress */
+}
+
+/* Education Timeline Styles */
+.education-timeline {
+    position: relative;
+    max-width: 600px;
+    margin-top: 20px;
+    padding-left: 30px;
+    list-style: none;
+    border-left: 3px solid #333;
+}
+.education-timeline li {
+  position: relative;
+  margin-bottom: 30px;
+}
+.education-timeline li::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: #333;
+  border:  3px solid #fff;
+  border-radius: 50%;
+  box-sizing: content-box;
+  transition: background-color 0.3s;
+}
+.education-timeline li:hover::before {
+  background: #555;
+}
+.timeline-content {
+  padding-left: 10px;
+}
+/* Dark mode style Education timeline*/
+body.dark .education-timeline {
+  border-left: 3px solid #f1f1f1;
+}
+body.dark .education-timeline li::before {
+  background: gray;
+  border: 3px solid red;
+}
+body.dark .education-timeline li:hover::before {
+  background: #ccc;
+}
+body.dark .timeline-date {
+  color: #f1f1f1;
+}
+/* Portfolio Gallery Section */
+.projects-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.projects-header h2 {
+text-align: center;
+  
+}
+/* Filter Buttons */
+.filter-buttons {
+    max-width: 800px;
+    margin: 20px auto 10px;
+    text-align: center;
+}
+.filter-btn {
+    background: #333;
+    color: #fff;
+    border: none;
+    margin: 0 5px 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.filter-btn:hover,
+.filter-btn.active {
+    background: #555;
+}
+
+/* Project Gallery Grid */
+.project-gallery {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Project Item */
+.project-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Project Image */
+.project-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay that appears on hover */
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(51,51,51,0.85);
+    color: #fff;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    max-height: 100%;
+    overflow: auto;
+}
+.project-item:hover .project-overlay {
+    opacity: 1;
+}
+
+/* Lightbox Styles */
+#lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#lightbox-overlay.active {
+    display: flex;
+}
+#lightbox-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+#lightbox-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+#lightbox-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    transition: background 0.3s;
+}
+#lightbox-close:hover {
+    background: #555;
+}
+
+/* Dark mode overrides if applicable */
+body.dark .filter-btn,
+body.dark #lightbox-close {
+    background: #444;
+}
+body.dark .filter-btn:hover,
+body.dark #lightbox-close:hover {
+    background: #666;
+}
+body.dark .project-overlay {
+    background: rgba(241,241,241,0.85);
+    color: #121212;
+}
+
+/* Contact Section Styles */
+#contact {
+    margin-top: 60px; /* Space above sections */
+    padding: 20px 0; /* Padding for sections */
+    max-width: 400px; /* Max width for form */
+    margin-inline: auto; /* Center sections */
+}
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between form items */
+    margin-top: 20px; /* Space above form */
+}
+input,
+textarea {
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Submit Button Styles */
+button[type="submit"] {
+    padding: 10px; /* Padding for button */
+    background: #333; /* Dark background for button */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+/* Footer Styles */
+footer {
+    margin-top: 40px; /* Space above footer */
+    text-align: center; /* Center text */
+    font-size: 0.9em; /* Smaller font size */
+}
+
+/* Reveal Animation Styles */
+.reveal {
+    opacity: 0; /* Start invisible */
+    transform: translateY(30px); /* Start below */
+    transition: 0.6s ease-out; /* Smooth transition */
+}
+.reveal.active {
+    opacity: 1; /* End visible */
+    transform: translateY(0); /* End at normal position */
+}
+
+/* Fixed Buttons Styles */
+#dark-mode-toggle,
+#scroll-top {
+    position: fixed; /* Fixed position */
+    background: #333; /* Dark background */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    font-size: 1.5rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1001; /* Ensure above other elements */
+    padding: 10px; /* Padding for buttons */
+    border-radius: 50%; /* Circular buttons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: background 0.3s; /* Smooth background transition */
+}
+#dark-mode-toggle {
+    bottom: 20px; /* Position from bottom */
+    left: 20px; /* Position from left */
+}
+#scroll-top {
+    bottom: 20px; /* Position from bottom */
+    right: 20px; /* Position from right */
+}
+#dark-mode-toggle:hover,
+#scroll-top:hover {
+    background: #555; /* Darker background on hover */
+}
+body.dark #dark-mode-toggle {
+    background: #444; /* Darker background for dark mode */
+}
+

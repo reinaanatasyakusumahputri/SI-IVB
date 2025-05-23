@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTS-Muhammad Panji Adhitya</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual public key
+        })();
+    </script>
+</head>
+<body>
+    <!-- Profile Image -->
+    <div id="profile-image-container">
+        <img src="assets/images/IMG_05101.JPG" alt="Profile Image" id="profile-image" loading="lazy" />
+    </div>
+    <!-- Header -->
+    <header>
+        <h1 id="nama">Muhammad Panji Adhitya</h1>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p><em>Work. Simple & Honest.</em></p>
+        <div class="social-media-links">
+            <a href="https://www.instagram.com/illustrious__?igsh=MXZnODBheGVjOWR3eA==" target="_blank">
+                <img src="assets/icons/icons8-instagram-logo.svg">
+            </a>
+            <a href="https://www.tiktok.com/@illustriousg?_t=ZS-8wZQlFaFQCP&_r=1" target="_blank">
+                <img src="assets/icons/icons8-tiktok.svg">
+            </a>
+            <a href="https://github.com/Panjii7" target="_blank">
+                <img src="assets/icons/icons8-github.svg">
+            </a>
+        </div>
+    </section>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! Nama saya Muhamad Panji Adhitya, Saya adalah seorang mahasiswa di Universitas Sebelas April Sumedang.</p>
+        <h3>Skills</h3>
+        <div class="skills">
+            <div class="skill">
+                <span>HTML</span>
+                <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>CSS</span>
+                <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>Premiere Pro</span>
+                <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+            </div>
+        </div>
+        <h3>Pendidikan</h3>
+<ul class="education-timeline">
+    <li>
+        <div class="timeline-content">
+            <p>SMK PGRI SUMEDANG</p>
+        </div>
+    </li>
+    <li>
+        <div class="timeline-content">
+            <p>SMPN 5 SUMEDANG</p>
+        </div>
+    </li>
+    <li>
+        <div class="timeline-content">
+            <p>SDN CIPANAS</p>
+        </div>
+    </li>
+</ul>
+    </section>
+    <!-- Portfolio Gallery Section -->
+    <!-- Portfolio Gallery Section (Grid, Lightbox, Filter) -->
+<section id="projects">
+    <div class="projects-header">
+        <h2 id="bagian-projects">Projects</h2>
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="video">Video</button>
+            <button class="filter-btn" data-filter="office">Office</button>
+        </div>
+    </div>
+    <!-- Project Grid -->
+    <div class="project-gallery">
+        <div class="project-item" data-category="design">
+            <img src="assets/images/design.png" alt="Design" class="project-image" loading="lazy" />
+            <div class="project-overlay">
+                <h3>Design Figma</h3>
+                <p>Portofolio pribadi</p>
+            </div>
+        </div>
+        <div class="project-item" data-category="design">
+            <img src="assets/images/design2.png" alt="Short Film Editing" class="project-image" loading="lazy" />
+            <div class="project-overlay">
+                <h3>Design Figma</h3>
+                <p>Webiste beasiswa</p>
+            </div>
+        </div>
+        <div class="project-item" data-category="video">
+            <img src="assets/images/yt.jpg" alt="Portfolio Website" class="project-image" loading="lazy" />
+            <div class="project-overlay">
+                <h3>Short Film Editor</h3>
+                <p>Editing short film using Premiere Pro</p>
+            </div>
+        </div>
+        <div class="project-item" data-category="video">
+            <img src="assets/images/vids2.png" alt="Video" class="project-image" loading="lazy" />
+            <div class="project-overlay">
+                <h3>Content Editor</h3>
+                <p>Editing short film using Premiere Pro</p>
+            </div>
+        </div>
+        <div class="project-item" data-category="video">
+            <img src="assets/images/vids3.png" alt="Video" class="project-image" loading="lazy" />
+            <div class="project-overlay">
+                <h3>Content Editing</h3>
+                <p>Video content creation and editing.</p>
+            </div>
+        </div>
+        <div class="project-item" data-category="video">
+            <img src="assets/images/vids4.png" alt="Video" class="project-image" loading="lazy" />
+            <div class="project-overlay">
+                <h3>Content Editor</h3>
+                <p>Video content creation</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" name="from_name" placeholder="Your Name" required />
+            <input type="email" name="from_email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> Muhammad Panji Adhitya. All rights reserved.</p>
+    </footer>
+    <!-- Fixed Buttons -->
+    <div class="fixed-buttons">
+        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+        <button id="scroll-top" aria-label="Back to Top">⬆️</button>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
