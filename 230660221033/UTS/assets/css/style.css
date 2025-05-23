@@ -1,0 +1,683 @@
+/* style.css */
+
+/* Custom CSS variables for color scheme */
+:root {
+    /* Light Mode Colors */
+    --primary-color-light: pink; /* White */
+    --secondary-color-light: white; /* White */
+    --accent-color-light: pink; /* Pink */
+    --background-light: white; /* Light background */
+    --text-color-light: #333333; /* Dark text */
+    --card-bg-light: white;
+    --navbar-bg-light: lightpink;
+    --footer-bg-light: white;
+    --border-color-light: pink;
+    
+  
+    /* Dark Mode Colors */
+    --primary-color: rgb(255, 255, 255); /* Coral */
+    --secondary-color-dark: #ffcc00; /* Yellow */
+    --accent-color-dark: #343a40; /* Darker Pink for dark mode buttons */
+    --background-dark: #343a40; /* Very dark background */
+    --text-color-dark: #e0e0e0; /* Light text */
+    --card-bg-dark: #495057;
+    --navbar-bg-dark: #495057;
+    --footer-bg-dark: #495057;
+   
+}
+
+/* Base styles for body - apply common styles regardless of mode */
+body {
+    font-family: Arial, sans-serif; /* Contoh font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* ===================================================== */
+/* ================ LIGHT MODE (DEFAULT) =============== */
+/* ===================================================== */
+body {
+    background-color: var(--background-light);
+    color: var(--text-color-light);
+}
+
+.navbar,
+.bg-light, /* Use this if you want to explicitly target elements with bg-light class */
+.card,
+.project-item,
+footer {
+    background-color: var(--card-bg-light);
+    color: var(--text-color-light);
+}
+
+.navbar {
+    background-color: var(--navbar-bg-light) !important; /* Override Bootstrap default */
+}
+
+footer {
+    background-color: var(--footer-bg-light);
+}
+
+.btn,
+.filter-buttons button {
+    background-color: var(--primary-color-light);
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-primary { /* For modeToggle button */
+    border-color: var(--primary-color-light);
+    color: var(--primary-color-light);
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary-color-light);
+    color: #fff;
+}
+
+
+.social-links a {
+    color: var(--text-color-light); /* Adjusted for better visibility */
+}
+
+/* Form controls in light mode */
+.form-control {
+    background-color: #fff;
+    color: var(--text-color-light);
+    border: 1px solid #ced4da;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+/* Lightbox in light mode */
+.lightbox-content {
+    background-color: var(--card-bg-light);
+    color: var(--text-color-light);
+}
+
+.lightbox-title,
+.lightbox-category {
+    color: var(--text-color-light);
+}
+
+.btn-primary {
+  color: #000000; /* Ubah warna font menjadi hitam */
+}
+
+/* ===================================================== */
+/* ================= DARK MODE VARIANTS ================ */
+/* ===================================================== */
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .navbar,
+body.dark-mode .bg-light, /* Target bg-light explicitly in dark mode */
+body.dark-mode .card,
+body.dark-mode .project-item,
+body.dark-mode footer {
+    background-color: var(--card-bg-dark);
+    color: var(--text-color-dark);
+    border-color: var(--border-color-dark); /* Add subtle border for definition */
+}
+
+body.dark-mode .navbar {
+    background-color: var(--navbar-bg-dark) !important;
+}
+
+body.dark-mode footer {
+    background-color: var(--footer-bg-dark);
+}
+
+body.dark-mode .btn,
+body.dark-mode .filter-buttons button {
+    background-color: var(--primary-color-dark);
+    color: var(--text-color-dark);
+    border: none;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode .filter-buttons button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+body.dark-mode .btn-outline-primary { /* For modeToggle button in dark mode */
+    border-color: var(--primary-color-dark);
+    color: var(--primary-color-dark);
+}
+body.dark-mode .btn-outline-primary:hover {
+    background-color: var(--primary-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .social-links a {
+    color: var(--primary-color-dark); /* Brighter for dark mode */
+}
+
+/* Form controls in dark mode */
+body.dark-mode .form-control {
+    background-color: #3a3a3a; /* Darker input background */
+    color: var(--text-color-dark);
+    border: 1px solid var(--border-color-dark);
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #999;
+}
+
+/* Lightbox in dark mode */
+body.dark-mode .lightbox-content {
+    background-color: var(--card-bg-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .lightbox-title,
+body.dark-mode .lightbox-category {
+    color: var(--text-color-dark);
+}
+
+/* Existing styles below */
+/* Burung animasi */
+.bird {
+    position: absolute;
+    font-size: 24px;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .bird1 {
+    top: 10%;
+    left: -50px;
+    animation: fly1 10s linear infinite;
+  }
+
+  .bird2 {
+    top: 20%;
+    left: -100px;
+    animation: fly2 15s linear infinite;
+  }
+
+  @keyframes fly1 {
+    0% {
+      transform: translateX(0) translateY(0) scale(1);
+      opacity: 0.3;
+    }
+    50% {
+      transform: translateX(50vw) translateY(-20px) scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100vw) translateY(0) scale(1);
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes fly2 {
+    0% {
+      transform: translateX(0) translateY(0) scale(0.9);
+      opacity: 0.3;
+    }
+    50% {
+      transform: translateX(60vw) translateY(10px) scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(120vw) translateY(-10px) scale(0.9);
+      opacity: 0.3;
+    }
+  }
+  /* CLOUD */
+.cloud {
+    position: absolute;
+    top: 10%;
+    width: 120px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+    opacity: 0.8;
+    animation: moveCloud 30s linear infinite;
+    z-index: 1;
+    filter: blur(8px);
+  }
+
+  .cloud::before, .cloud::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+  }
+
+  .cloud::before {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: 10px;
+  }
+
+  .cloud::after {
+    width: 60px;
+    height: 60px;
+    top: -20px;
+    right: 10px;
+  }
+
+  .cloud1 {
+    top: 10%;
+    left: -150px;
+    animation-delay: 0s;
+  }
+
+  .cloud2 {
+    top: 20%;
+    left: -200px;
+    animation-delay: 30s;
+  }
+
+  @keyframes moveCloud {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(120vw);
+    }
+  }
+  
+/* Hero section with gradient background */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-light);
+    padding: 5rem 0;
+    margin-bottom: 3rem;
+}
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .hero p {
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    transition: transform 0.8s;
+  }
+
+  .social-links a:hover {
+    transform: scale(0.8);
+  }
+
+  /* Animasi */
+  .fade-slide {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideUp 1s ease-out forwards;
+  }
+
+  @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Burung statis animasi di bawah ikon */
+.bird-static {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    animation: float 2.5s ease-in-out infinite;
+  }
+
+  /* Efek melayang pelan */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+/* Profile image styling */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Maintain aspect ratio */
+    border: 5px solid var(--text-light);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section title styling */
+.section-title {
+    position: relative;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+/* Portfolio lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Education card styling */
+.education-card {
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s;
+    /* Smooth hover animation */
+}
+
+/* Hover effect for education cards */
+.education-card:hover {
+    transform: translateY(-5px);
+    /* Slight lift effect */
+}
+
+/* Loading Screen Styling */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid pink;
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loading-screen p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Project*/
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .filter-buttons button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    margin: 0 8px 8px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .filter-buttons button:hover,
+  .filter-buttons button.active {
+    background: #0056b3;
+  }
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 18px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .project-item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+  }
+  .project-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+  .project-info {
+    padding: 15px 18px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .project-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    color: #111;
+  }
+  .project-category {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* ===== Lightbox Styles ===== */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(4px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+  }
+  .lightbox.active {
+    display: flex;
+  }
+  .lightbox-content {
+    background: white;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 26px rgba(0,0,0,0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .lightbox-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    background: #000;
+  }
+  .lightbox-info {
+    padding: 20px;
+  }
+  .lightbox-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #222;
+  }
+  .lightbox-category {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 16px;
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 26px;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    user-select: none;
+  }
+  .lightbox-close:hover {
+    background: rgba(0,0,0,0.9);
+  }
+
+/* Progress Bar Colors */
+.bg-pink {
+    background-color: #ff4081 !important; /* Pink */
+}
+
+.bg-lightblue {
+    background-color: #00bcd4 !important; /* Light Blue */
+}
+
+.bg-yellow {
+    background-color: #ffcc00 !important; /* Yellow */
+}
+.bg-green {
+    background-color: green !important; /* Green */
+}
+
+/* Animations */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.bounceIn {
+    animation-name: bounceIn;
+}
+
+@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: #ff4081;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px var(--shadow-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top-btn:hover {
+    background-color: var(--hover-color);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}
