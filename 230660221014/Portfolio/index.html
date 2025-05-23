@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portofolio Yudi Aditiya Rahman</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="assets/image/logo/Universitas Sebelas April.svg">
+
+        <!-- Bootstrap 5 CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.5/dist/brite/bootstrap.min.css"
+            rel="stylesheet">
+
+        <!-- Font Awesome for icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- Custom CSS Lokal-->
+        <link rel="stylesheet" href="assets/css/custom.css">
+
+    </head>
+
+    <body >
+        <!-- Loading Screen -->
+        <div id="loading-screen">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+        <!-- Navigation -->
+        <nav
+            class="navbar navbar-expand-lg bg-light"
+            data-bs-theme="light"
+            style="padding-left: 10px; padding-right: 10px;">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img
+                        src="assets/image/logo/AG.svg"
+                        alt="Logo"
+                        width="30"
+                        height="30"
+                        class="d-inline-block align-text-top me-2">
+                    Portfolio
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#about">Tentang Saya</a>
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Pengalaman</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobbies">Hobi</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" style="margin-left: auto; margin-right: 20px;">
+                    <div class="form-check form-switch text-dark ms-3">
+                        <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                        <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="hero-section text-center py-5 bg-light"
+        style="background-image: url('assets/image/bg/background 1.png'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h1 class="display-8 fw-bold mb-3"></h1>
+                    <img
+                        src="assets/image/profile/pp.png"
+                        alt="Profile Picture"
+                        loading="lazy"
+                        class="profile-img rounded-circle mb-4">
+                    <h1 class="display-4 fw-bold mb-3">YUDI ADITIYA RAHMAN</h1>
+                    <div class="quote-card bg-secendary p-4 my-4">
+                        <blockquote class="blockquote mb-0 bg">
+                            <p>"Keberhasilan Milik Mereka yang Tak Pernah Berhenti Berusaha dan Kita Adalah
+                                Arsitek Masa Depan Kita Sendiri."</p>
+                            <footer class="blockquote-footer">Yudi Aditiya Rahman</footer>
+                        </blockquote>
+                    </div>
+                    <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+                        <a
+                            href="assets/docs/Yudi CV.pdf"
+                            download="download"
+                            class="btn btn-outline-success"
+                            title="Klik untuk unduh CV">
+                            <i class="fas fa-file-download me-2"></i>Download CV
+                        </a>
+
+                        <button
+                            id="hireMeBtn"
+                            class="btn btn-outline-light"
+                            data-bs-toggle="modal"
+                            data-bs-target="#hireModal">
+                            Hubungi Saya
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Media Saya</h2>
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <img src="assets/icon/social/YouTube.svg" alt="YouTube" loading="lazy"/>
+                            <a
+                                href="https://www.youtube.com/channel/UC15p39vQVoy0DaWuijj-e2g"
+                                title="YouTube"
+                                target="_blank"
+                                rel="noopener">
+                                <h4>
+                                    <button class="btn btn-light">
+                                        YouTube
+                                    </button>
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="assets/icon/social/Github.svg" alt="GitHub" loading="lazy"/>
+                            <a
+                                href="https://github.com/230660221014"
+                                title="GitHub"
+                                target="_blank"
+                                rel="noopener">
+                                <h4>
+                                    <button class="btn btn-light">
+                                        GitHub
+                                    </button>
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="assets/icon/social/Tiktok.svg" alt="TikTok" loading="lazy"/>
+                            <a
+                                href="https://www.tiktok.com/@adityaag_0"
+                                title="TikTok"
+                                target="_blank"
+                                rel="noopener">
+                                <h4>
+                                    <button class="btn btn-light">
+                                        TikTok
+                                    </button>
+                                </h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body text-center">
+                            <h2 class="section-title text-center">Tentang Saya</h2>
+                            <p class="lead">Selamat datang di portofolio saya! saya Seorang Mahasiswa Di
+                                Universitas Sebelas April Sumedang, Fakultas Teknologi Informasi, program studi
+                                Sistem Informasi, Mahasiswa Semester 4, Saya pengurus divisi SDM di UKM
+                                Fotografi UNSAP, di mana saya aktif berkontribusi dalam pengelolaan dan
+                                pengembangan sumber daya manusia.</p>
+
+                            <div class="mb-4">
+                                <h4 class="section-title text-center">Skills</h4>
+
+                                <div class="mb-3">
+                                    <label>HTML</label>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" style="width: 80%;">80%</div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label>CSS</label>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" style="width: 65%;">65%</div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label>JavaScript</label>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" style="width: 40%;">40%</div>
+                                    </div>
+                                </div>
+                            <div class="education-timeline mt-5">
+                                <h4 class="mb-4 section-title text-center">Education</h4>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2023 - Sekarang</div>
+                                        <div class="timeline-content">
+                                            <h5>Mahasiswa Sistem Informasi</h5>
+                                            <p>Universitas Sebelas April Sumedang</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2019 - 2023</div>
+                                        <div class="timeline-content">
+                                            <h5>RPL</h5>
+                                            <p>SMK INFORMATIKA SUMEDANG</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Portfolio Gallery</h2>
+
+            <!-- Filter Buttons -->
+            <div class="d-flex justify-content-center flex-wrap mb-5">
+                <button class="btn filter-btn active" data-filter="all">All</button>
+                <button class="btn filter-btn" data-filter="Film">Film</button>
+                <button class="btn filter-btn" data-filter="Proposal">Proposal</button>
+                <button class="btn filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="row justify-content-center" id="portfolioGallery">
+                <!-- Project 1 -->
+                <div class="col-sm-6 col-md-4 mb-4 portfolio-item" data-category="Film">
+                    <a
+                        href="assets/image/project/Project film 2.jpg"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        data-img="assets/image/project/Project film 2.jpg">
+                        <img
+                            src="assets/image/project/Project film 2.jpg"
+                            class="img-fluid rounded shadow"
+                            alt="Project Film 2"
+                            loading="lazy">
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-sm-6 col-md-4 mb-4 portfolio-item" data-category="mobile">
+                    <a
+                        href="assets/image/project/Project APK mobile.png"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        data-img="assets/image/project/Project APK mobile.png">
+                        <img
+                            src="assets/image/project/Project APK mobile.png"
+                            class="img-fluid rounded shadow"
+                            alt="Project APK mobile"
+                            loading="lazy">
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-sm-6 col-md-4 mb-4 portfolio-item" data-category="Film">
+                    <a
+                        href="assets/image/project/Project film 1.jpg"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        data-img="assets/image/project/Project film 1.jpg">
+                        <img
+                            src="assets/image/project/Project film 1.jpg"
+                            class="img-fluid rounded shadow"
+                            alt="Project Film 1"
+                            loading="lazy">
+                    </a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-sm-6 col-md-4 mb-4 portfolio-item" data-category="Proposal">
+                    <a
+                        href="assets/image/project/Project Proposal.png"
+                        data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal"
+                        data-img="assets/image/project/Project Proposal.png">
+                        <img
+                            src="assets/image/project/Project Proposal.png"
+                            class="img-fluid rounded shadow"
+                            alt="Project Proposal"
+                            loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Pengalaman</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 experience-card shadow-sm">
+                                <div class="card-body-content">
+                                    <h5 class="card-title">Praktik Kerja Lapangan (PKL)</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Pemerintahan Daerah (PEMDA)</h6>
+                                    <p class="card-text">Mei 2022-Agustus 2022</p>
+                                    <p class="card-text">
+                                        Dibidang Badan Keuangan dan Aset Daerah (BKAD).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 experience-card shadow-sm">
+                                <div class="card-body-content">
+                                    <h5 class="card-title">Asia Plaza</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Outlet</h6>
+                                    <p class="card-text">Mei 2023-Agustus 2023</p>
+                                    <p class="card-text">Sebagai Kasir.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="py-5  bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Hobi</h2>
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-3 mb-4">
+                            <div class="hobby-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h4>Game</h4>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="hobby-icon">
+                                <i class="fas fa-running"></i>
+                            </div>
+                            <h4>Olahraga</h4>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="hobby-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h4>Fotografi</h4>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="hobby-icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <h4>Membuat Konten</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-black py-4">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2025 Portofolio Yudi Aditiya Rahman.</p>
+    </div>
+    <button id="backToTop" class="btn btn-light position-fixed bottom-0 end-0 m-4">
+        <i class="fas fa-arrow-up me-2"></i>Kembali Ke Atas
+    </button>
+</footer>
+</footer>
+
+<!-- Hubungi Saya Modal -->
+<div
+class="modal fade"
+id="hireModal"
+tabindex="-1"
+aria-labelledby="hireModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="hireModalLabel">Hubungi Saya</h5>
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Silakan isi form berikut untuk menghubungi saya.</p>
+            <form id="hireForm">
+                <div class="mb-3">
+                    <label for="hireName" class="form-label">Nama</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="hireName"
+                        placeholder="Masukkan nama Anda"></div>
+                <div class="mb-3">
+                    <label for="hireEmail" class="form-label">Email</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="hireEmail"
+                        placeholder="Masukkan email Anda"></div>
+                <div class="mb-3">
+                    <label for="hireMessage" class="form-label">Pesan</label>
+                    <textarea
+                        class="form-control"
+                        id="hireMessage"
+                        rows="4"
+                        placeholder="Masukkan pesan Anda"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" form="hireForm" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Lightbox Modal -->
+<div
+class="modal fade"
+id="lightboxModal"
+tabindex="-1"
+aria-labelledby="lightboxModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+        <div class="modal-body p-0">
+            <img id="lightboxImage" src="" class="img-fluid w-100" alt="Preview">
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS Lokal -->
+<script src="assets/js/script.js" defer="defer"></script>
+<!-- CDN -->
+</script>
+
+</body>
+
+</html>
+
+<!-- -->
