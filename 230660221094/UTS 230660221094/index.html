@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="asset/css/custom.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script defer src="asset/js/script.js"></script>
+</head>
+
+<body>
+  <!-- Loading Animation -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌟 Kikania Zahra</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle" aria-label="Toggle Dark Mode">🌙</button>
+        </li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="asset/images/profil.jpg" alt="Gambar Profil" class="profile-pic" />
+      <div class="intro">
+        <h1>Hi, I'm <span class="highlight">Kikania Zahra</span></h1>
+        <p class="tagline">Mahasiswa Semester 4 | Sistem Informasi</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/kikania-zahra-819934290" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/230660221094" aria-label="GitHub">GitHub</a>
+          <a href="https://www.instagram.com/kaniazraa" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+   <section id="about" class="about-container">
+    <h2 class="title">Tentang Saya</h2>
+    <div class="about-card">
+      <p class="intro">Halo! Saya Kikania seorang mahasiswa yang memiliki semangat tinggi untuk terus belajar dan berkembang. 
+        Saya percaya bahwa setiap proses adalah bagian penting dari perjalanan menuju masa depan yang lebih baik.
+         Disiplin, rasa ingin tahu, dan kerja sama tim adalah nilai yang saya pegang dalam setiap aktivitas.</p>
+      <blockquote class="quote">
+        <p>"The only way to do great work is to love what you do."</p>
+        <cite>— Steve Jobs</cite>
+      </blockquote>
+    </div>
+  </section>
+  
+
+<div class="skills-section">
+  <h2 style = "text-align: center;">Skills</h2>
+  <div class="skill">
+    <span><i class="fa-brands "></i> Komunikasi Interpersonal</span>
+    <div class="progress-bar">
+      <div class="progress" style="width: 90%;">90%</div>
+    </div>
+  </div>
+  <div class="skill">
+    <span><i class="fa-brands "></i> Penggunaan Microsoft Office </span>
+    <div class="progress-bar">
+      <div class="progress css" style="width: 85%;">85%</div>
+    </div>
+  </div>
+  <div class="skill">
+    <span><i class="fa-brands "></i> Manajemen waktu</span>
+    <div class="progress-bar">
+      <div class="progress js" style="width: 80%;">80%</div>
+    </div>
+  </div>
+  <div class="skill">
+    <span><i class="fa-brands "></i> UI/UX Design Figma</span>
+    <div class="progress-bar">
+      <div class="progress js1" style="width: 75%;">75%</div>
+    </div>
+  </div>
+</div>
+<div class="education-section">
+  <h2 style="text-align: center;">Pendidikan</h2>
+  <ul>
+    <li><strong>2020-2023</strong> –  Rekayasa Perangkat Lunak, SMKN 2 Sumedang </li>
+    <li><strong>2023-Sekarang</strong> – Sistem Informasi , Universitas Sebelas April </li>
+  </ul>
+</div>
+
+<!-- Pengalaman Organisasi-->
+    <section class="pengalaman-organisasi">
+  <h2 style="text-align: center;">Pengalaman Organisasi</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Front-end Developer</h3>
+      <p><strong>Tahu Ngoding</strong><br>2023-2024</p>
+      <p>Mengembangkan aplikasi web modern dengan teknologi terbaru.</p>
+    </div>
+    <div class="card">
+      <h3>Back-end Developer</h3>
+      <p><strong>Tahu Ngoding</strong><br>2024-2025</p>
+      <p>Membantu tim dalam pengembangan dan pemeliharaan sistem.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Hobi -->
+         <!-- Section Hobi -->
+<section class="hobi-section">
+  <h2 class="hobi-title">Hobi</h2>
+  <div class="hobi-cards">
+    <div class="hobi-card">
+      <i class="fas fa-book"></i>
+      <p>Membaca</p>
+    </div>
+    <div class="hobi-card">
+      <i class="fas fa-code"></i>
+      <p>Ngoding</p>
+    </div>
+    <div class="hobi-card">
+      <i class="fas fa-bicycle"></i>
+      <p>Bersepeda</p>
+    </div>
+    <div class="hobi-card">
+      <i class="fas fa-film"></i>
+      <p>Menonton Film</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <h2 style="text-align: center;">My Projects</h2>
+    <div class="button-group">
+    <button class="embed-button" data-filter="design">Tampilkan Desain</button>
+    <button class="embed-button" data-filter="youtube">Tampilkan YouTube</button>
+    <button class="embed-button" data-filter="cv">CV</button>
+  </div>
+  <div id="previewArea"></div>
+</section>
+    
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact">
+    <h2 style = "text-align: center;">Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kikania Zahra.</p>
+  </footer>
+</body>
+
+</html>
