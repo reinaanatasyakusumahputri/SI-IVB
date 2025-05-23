@@ -1,0 +1,525 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.dark-mode nav {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark-mode nav ul li a {
+    color: #333;
+}
+.dark-mode-toggle {
+    margin-left: 20px; 
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode .hero {
+    background-color: #444;
+    color: #eee;
+}
+
+.dark-mode .skill, .dark-mode .container, .dark-mode .filter-bar {
+    background-color: #444;
+    color: #eee;
+}
+
+.dark-mode footer {
+    background-color: #333;
+    color: #f4f4f4;
+}/* HEADER */
+header {
+    background-color: #ffffff;
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: #e0e0e0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh; /* lebih pendek dari 100vh */
+    padding: 40px 20px; /* atas bawah diperkecil */
+}
+
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.about-me-button {
+    display: inline-block;
+    background-color: #eee;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+.about-me-button:hover {
+    background-color: #ddd;
+}
+
+/* BUTTON UMUM */
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #eee;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #eee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* QUOTE */
+.quote-container {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.quote-container blockquote {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.quote-container cite {
+    display: block;
+    font-size: 0.9em;
+    color: #333;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.about__content-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #eee;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+ .footer-content {
+ margin-bottom: 10px; 
+}
+.social-icons {
+display: flex;
+gap: 10px;
+margin-top: 10px;
+}
+
+.social-icons a {
+ color: #fff;
+font-size: 20px;
+text-decoration: none;
+}
+
+.social-icons a:hover {
+color: #f5f5f5;
+}
+.hobbies {
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.hobbies h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hobbies ul li {
+    display: inline-block; /* Membuat item menjadi inline tetapi tetap bisa diatur width/height/padding/margin */
+    font-size: 1.1em;
+    margin-right: 15px; /* Jarak antar item hobi */
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 8px; /* Jarak ke baris berikutnya jika wrap */
+}
+/* Style untuk toggle dark mode */
+.dark-mode-toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.toggle-label {
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-ball {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.social-links a {
+
+    font-size: 1.5rem; 
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  
+    color: #e0e0e0; 
+    text-decoration: none; 
+}
+
+
+#backToTop {
+
+    z-index: 1030; 
+    padding: 10px 15px; 
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#backToTop:hover {
+    background-color: #f0f0f0; 
+    transform: translateY(-3px); 
+}
+
+#backToTop .fa-arrow-up {
+    margin-right: 0.5rem; 
+}
+
+
+
+/* --- */
+
+/* Contact Section Styling */
+#contact {
+    background-color: #ffffff; /* White background for the contact section */
+    padding-top: 3rem; /* py-5 equivalent */
+    padding-bottom: 3rem; /* py-5 equivalent */
+}
+
+.section-title {
+    color: #007bff; /* Primary blue for the title */
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem; /* mb-5 equivalent */
+}
+
+/* --- */
+
+/* Card Styling */
+.card {
+    border: none; /* Remove default card border */
+    border-radius: 0.75rem; /* Slightly rounded corners */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.card-body {
+    padding: 2rem; /* p-4 equivalent */
+}
+
+/* --- */
+
+/* Form Label Styling */
+.form-label {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* --- */
+
+/* Form Control (Input/Textarea) Styling */
+.form-control {
+    border-radius: 0.375rem; /* Standard Bootstrap border-radius */
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); 
+}
+
+
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary blue */
+    border-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.5); /* Focus ring */
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+.portfolio-item {
+    position: relative;
+    background: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255,204,0,0.7);
+}
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    filter: brightness(0.85);
+    transition: filter 0.3s ease;
+}
+.portfolio-item:hover img {
+    filter: brightness(1);
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+/* Video iframe positioning */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.social-icon {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    transition: color 0.3s;
+    /* Smooth color transition */
+}
+
+/* Hover effect for social icons */
+.social-icon:hover {
+    color: var(--accent-color);
+
+}
+.filter-bar {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.filter-bar button {
+    background: none;
+    border: 2px solid #555;
+    color: #1f1f1f;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 0 10px 10px 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    user-select: none;
+}
+.filter-bar button.active,
+.filter-bar button:hover {
+    background: #555;
+    color: #1f1f1f;
+}
+.skill-buttons {
+    display: flex;
+    gap: 15px; /* Jarak antar tombol */
+    justify-content: center;
+}
+
+.skill-button {
+    background-color: #e0e0e0; /* Warna latar belakang tombol default */
+    color: #555;
+    border: 1px solid #ccc;
+    padding: 12px 25px;
+    border-radius: 30px; /* Membuat bentuk pil */
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    outline: none; /* Menghilangkan outline saat diklik */
+}
+
+.skill-button:hover {
+    background-color: #d0d0d0;
+    color: #333;
+    border-color: #bbb;
+}
+.skill-button.active {
+    background-color: #505050; /* Warna yang lebih gelap untuk active state */
+    color: #ffffff;
+    border-color: #404040;
+}
+
+
+.dark-mode-toggle input:checked + .toggle-label {
+    background-color: #007bff;
+}
+
+.dark-mode-toggle input:checked + .toggle-label .toggle-ball {
+    transform: translateX(30px);
+}
