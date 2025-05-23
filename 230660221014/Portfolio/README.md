@@ -23,10 +23,6 @@ Website ini menyajikan:
 - Bootstrap 5 (Tema: Brite)
 - Font Awesome Icons
 
-## 📷 Screenshot
-
-![Preview Portofolio](assets/image/project/Project%20Proposal.png)
-
 ## 🧠 Fitur Utama
 
 - 💡 **Dark Mode**: Pengguna dapat mengaktifkan mode gelap.
