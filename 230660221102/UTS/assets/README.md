@@ -52,7 +52,7 @@ Repositori ini diatur dengan struktur yang rapi untuk memudahkan navigasi:
 ### 6. Styling & Responsiveness ✅
 * Desain modern & profesional
 * Mendukung berbagai perangkat dengan media queries
-* Konsistensi dalam color scheme (# dan #)
+* Konsistensi dalam color scheme ( #0097b2 dan #fda921)
 
 ## Cara Melihat Portofolio Ini 🖥️
 
