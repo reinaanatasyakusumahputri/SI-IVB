@@ -207,4 +207,15 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(container);
     });
 });
+// Progress bar
+document.addEventListener('DOMContentLoaded', () => {
+  const progressBars = document.querySelectorAll('.progress-bar');
+  progressBars.forEach(bar => {
+    const percentage = bar.dataset.progress;
+    setTimeout(() => {
+      bar.style.width = percentage + '%';
+    }, 100);
+  });
+});
+
 

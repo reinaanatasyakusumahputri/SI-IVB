@@ -71,11 +71,11 @@ a:hover {
     color: var(--primary-color); 
     filter: brightness(1.2);
 }
-
+/* Header */
 .header {
     background-color: var(--card-background);
     color: var(--text-color);
-    padding: 15px 0;
+    padding: 0px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -99,10 +99,11 @@ a:hover {
     gap: 10px; 
 }
 .site-logo {
-    height: 65px;
+    height: 45px;
     width: auto; 
 }
 
+/* Navbar */
 .navbar {
     display: flex; 
     align-items: center; 
@@ -162,7 +163,7 @@ a:hover {
 .hero-section {
     background-color: var(--background-color);
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 0;
     min-height: calc(100vh - 70px); 
     display: flex;
     align-items: center;
@@ -175,7 +176,7 @@ a:hover {
     text-align: left;
     align-items: right;
     margin-left: 10px;
-    margin-right: 100px; 
+    margin-right: 100px;
 }
    
 .profile-picture {
@@ -227,12 +228,26 @@ a:hover {
     transform: translateY(-5px);
 }
 
-
+/* About section */
 .about-section {
     padding: 80px 0;
     background-color: var(--card-background);
     box-shadow: 0 2px 10px var(--shadow-color);
     margin-bottom: 40px;
+}
+
+.profile-picture2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    object-position: 50% 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -30px;
 }
 
 .about-content .description {
@@ -255,7 +270,7 @@ a:hover {
     justify-content: center; 
     align-items: flex-start; 
 }
-/* Skills Section */
+
 .skills-section {
     flex: 1; 
     min-width: 300px; 
@@ -278,7 +293,7 @@ a:hover {
 }
 
 .skill-item {
-    margin-bottom: 25px; 
+    margin-bottom: 20px; 
 }
 
 .skill-name {
@@ -393,9 +408,7 @@ a:hover {
     margin: 0 0 5px 0;
     color: #ffffff;
     font-size: 1.2em;
-    margin-left: 8%;
-    
-    
+    margin-left: 8%; 
 }
 
 .timeline-content p {
@@ -411,8 +424,7 @@ a:hover {
     margin-top: 5px;
 }
 
-
-
+/* Portfolio */
 .portfolio-section {
     padding: 80px 0;
     background-color: var(--background-color);
@@ -513,6 +525,7 @@ a:hover {
     color: var(--secondary-color);
 }
 
+/* Contact */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -524,9 +537,7 @@ a:hover {
 
 .contact-form .form-group {
     margin-bottom: 20px;
-    max-width: 570px;
-    
-    
+    max-width: 570px; 
 }
 
 .contact-form label {
@@ -590,16 +601,15 @@ a:hover {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
-    color: #28a745; 
+    color: #ffffff; 
 }
-
 /* Footer */
 .footer {
     background-color: var(--card-background);
     color: var(--text-color);
     text-align: center;
-    padding: 25px 0;
-    margin-top: 40px;
+    padding: 5px 0;
+    margin-top: 20px;
     box-shadow: 0 -2px 10px var(--shadow-color);
 }
 
@@ -757,6 +767,7 @@ a:hover {
     }
 }
 
+/* Responsive media */
 @media (min-width: 769px) and (max-width: 1024px) {
     .container {
         width: 90%;
