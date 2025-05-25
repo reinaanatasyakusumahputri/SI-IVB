@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+}
+
+.open-btn {
+    background-color: #e77471;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 20px;
+    border-radius: 5px;
+    z-index: 2; /* Agar tombol tetap di atas sidebar saat terbuka */
+}
+
+.sidebar {
+    background-color: #333;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Sembunyikan sidebar secara default */
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+
+.sidebar.open {
+    left: 0; /* Tampilkan sidebar saat kelas 'open' ditambahkan */
+}
+
+.close-btn {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px; /* Beri ruang di bawah tombol close */
+}
+
+.menu-items li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.menu-items li a:hover {
+    background-color: #555;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 0; /* Sesuaikan margin saat sidebar terbuka */
+    transition: margin-left 0.3s ease;
+}
+
+.main-content.open {
+    margin-left: 250px; /* Geser konten ke kanan saat sidebar terbuka */
+}
