@@ -1,0 +1,776 @@
+#loading-screen {
+  background: linear-gradient(135deg, #fff0f5, #ffe0ec);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes cherryBounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -5px); }
+}
+
+/* hide loading */
+#loading-screen.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 🌸 Font & Base Reset */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff5f9;
+  color: #5a5a5a;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 🌈 Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #ffb6c1;
+  color: white;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(255, 150, 170, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+/* ✨ Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-bottom: 4px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff3b0;
+  text-shadow: 0 0 6px #fff3b0;
+}
+
+nav ul li a.active {
+  color: #fff3b0;
+  border-bottom: 3px solid #fff3b0;
+  text-shadow: 0 0 10px #fff3b0;
+}
+
+/* 🧁 Hero Section */
+#hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffe0ec;
+  margin: 30px auto;
+  max-width: 650px;
+  border-radius: 25px;
+  box-shadow: 0 6px 14px rgba(255, 165, 185, 0.4);
+}
+
+#hero img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(255, 100, 140, 0.5);
+  transition: transform 0.3s ease;
+}
+
+#hero img:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 10px 8px;
+  padding: 6px 12px;
+  background-color: #ffcce6;
+  color: #8c3554;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #ffb3d9;
+  transform: scale(1.05);
+}
+
+/* 🎶 Music */
+#music {
+  text-align: center;
+  background-color: #fff0f5;
+  padding: 30px 20px;
+  margin: 40px auto;
+  border-radius: 20px;
+  max-width: 750px;
+  box-shadow: 0 6px 15px rgba(255, 170, 200, 0.4);
+}
+
+.cassette-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cassette {
+  width: 100px;
+  height: 100px;
+  background-color: #ff8fab;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 140, 160, 0.4);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.cassette.spin {
+  animation: spinCassette 2s linear infinite;
+}
+
+@keyframes spinCassette {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 📒 Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* 📌 Sidebar */
+.sidebar {
+  flex: 1 1 300px;
+  background: linear-gradient(145deg, #ffe6f0, #ffcce0);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(255, 180, 200, 0.3);
+}
+
+.sidebar h2 {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(255, 200, 220, 0.3);
+}
+
+.sub-section {
+  margin-bottom: 30px;
+}
+
+.mini-title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 6px 14px;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(255, 190, 200, 0.3);
+}
+
+/* 📊 Skills */
+.skills-slider {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.skills-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.skill-slide {
+  flex: 0 0 85%;
+  background-color: #fff0f6;
+  padding: 15px;
+  border-radius: 15px;
+  scroll-snap-align: center;
+  box-shadow: 0 4px 10px rgba(255, 170, 200, 0.4);
+}
+
+.progress-bar {
+  background-color: #ffdce7;
+  border-radius: 10px;
+  height: 10px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #ff7891;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* 🎓 Education */
+.education-list {
+  list-style: none;
+  padding: 0;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* 🧩 Portfolio */
+.main-content {
+  flex: 2 1 600px;
+  background: linear-gradient(to bottom right, #fff0f8, #ffe0ec);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(248, 200, 211, 0.4);
+}
+
+/* Project card media wrapper agar ukuran media konsisten */
+.media-wrapper {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.5);
+  margin-top: 10px;
+}
+
+.media-wrapper iframe,
+.media-wrapper video,
+.media-wrapper img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Video-specific tweaks */
+.project-card video {
+  background-color: black; /* fallback bg */
+}
+
+/* Portfolio gallery item consistent size and style */
+.project-card {
+  min-width: 240px;
+  max-width: 280px;
+  flex: 0 0 auto;
+  background: linear-gradient(145deg, #ffbad2, #ff85b8);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.6);
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 20, 147, 0.8);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(255, 20, 147, 0.8);
+}
+
+/* Anchor links inside cards */
+.project-card a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+/* Dark mode background improved - warna abu/ungu gelap senada */
+body.dark-mode {
+  background-color: #2a2233; /* ungu gelap ke abu */
+  color: #d1d1d1;
+}
+
+body.dark-mode header {
+  background-color: #3a2f47; /* abu ungu lebih gelap */
+  color: #e1e1e1;
+}
+
+body.dark-mode .main-content,
+body.dark-mode .sidebar,
+body.dark-mode #music,
+body.dark-mode #contact {
+  background: linear-gradient(135deg, #3a2f47cc, #261e35cc);
+  box-shadow: 0 5px 12px rgba(20, 15, 30, 0.7);
+  color: #ccc;
+}
+
+body.dark-mode .portfolio-gallery {
+  background: transparent;
+}
+
+body.dark-mode .project-card {
+  background: linear-gradient(145deg, #4a3b6a, #2e2447);
+  box-shadow: 0 5px 15px rgba(80, 60, 120, 0.7);
+  color: #ddd;
+}
+
+body.dark-mode .project-card:hover {
+  box-shadow: 0 8px 20px rgba(120, 90, 190, 0.9);
+  color: #fff;
+}
+
+body.dark-mode .project-card h3 {
+  text-shadow: 0 1px 3px rgba(180, 160, 240, 0.9);
+}
+
+/* Responsive tweaks if needed */
+@media (max-width: 768px) {
+  .portfolio-gallery {
+    justify-content: center;
+  }
+
+  .project-card {
+    max-width: 95vw;
+  }
+}
+
+
+/* ✉️ Contact */
+#contact {
+  background-color: #ffe9f0;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 12px rgba(255, 180, 200, 0.3);
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ffc2d1;
+  font-size: 1rem;
+}
+
+#contact-form button {
+  padding: 12px;
+  background-color: #ff91a4;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #ff7790;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .skills-slider {
+    gap: 10px;
+  }
+}
+
+/* 🌙 Dark Mode Custom */
+body.dark-mode {
+  background-color: #1c1c1e;
+  color: #d1d1d1;
+}
+
+body.dark-mode header {
+  background-color: #2c2c2e;
+  color: #e1e1e1;
+}
+
+body.dark-mode .main-content,
+body.dark-mode .sidebar,
+body.dark-mode #music,
+body.dark-mode #contact {
+  background: linear-gradient(135deg, rgba(60, 60, 60, 0.85), rgba(40, 40, 40, 0.85));
+  box-shadow: 0 5px 12px rgba(10, 10, 10, 0.6);
+  color: #ccc;
+}
+
+body.dark-mode .sidebar h2,
+body.dark-mode .mini-title {
+  background-color: rgba(90, 90, 90, 0.8);
+  box-shadow: 0 2px 6px rgba(30, 30, 30, 0.6);
+  color: #ddd;
+}
+
+body.dark-mode #hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, rgba(60, 60, 60, 0.85), rgba(40, 40, 40, 0.85));
+  margin: 30px auto;
+  max-width: 650px;
+  border-radius: 25px;
+  box-shadow: 0 6px 14px rgba(80, 80, 80, 0.4);
+  color: #ddd;
+}
+
+body.dark-mode #hero img {
+  box-shadow: 0 4px 12px rgba(120, 120, 120, 0.6);
+}
+
+body.dark-mode #hero img:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+body.dark-mode .social-links a {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: #ccc;
+}
+
+body.dark-mode .social-links a:hover {
+  background-color: rgba(150, 150, 150, 0.6);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+body.dark-mode nav ul li a {
+  color: #bbb;
+}
+
+body.dark-mode nav ul li a.active,
+body.dark-mode nav ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #999;
+}
+
+body.dark-mode .portfolio-item {
+  background-color: rgba(60, 60, 60, 0.85);
+  box-shadow: 0 5px 10px rgba(30, 30, 30, 0.7);
+  color: #ccc;
+}
+
+body.dark-mode .portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(80, 80, 80, 0.8);
+}
+
+body.dark-mode .portfolio-item img {
+  border-radius: 18px 18px 0 0;
+}
+
+body.dark-mode .portfolio-item.video iframe {
+  box-shadow: 0 4px 10px rgba(60, 60, 60, 0.8);
+}
+
+body.dark-mode .education-list {
+  color: #999;
+}
+
+/* Posisi atas section */
+#hero, #about, #portfolio {
+  scroll-margin-top: 100px;
+}
+
+/* Judul di gambar portfolio */
+.portfolio-title {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background: rgba(90, 90, 90, 0.6);
+  border-radius: 0 0 18px 18px;
+  color: #eee;
+}
+
+/* Kaset styling fix */
+#spotifyPlayer {
+  display: none;
+}
+
+.portfolio-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffafc6, #ff78a6);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+  color: #fff;
+  user-select: none;
+}
+
+.portfolio-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 0 2px 5px rgba(255, 20, 147, 0.8);
+}
+
+/* Gallery container: horizontal scroll */
+.portfolio-gallery {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.portfolio-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+/* Each project card */
+.project-card {
+  min-width: 230px;
+  flex: 0 0 auto;
+  background: linear-gradient(145deg, #ffbad2, #ff85b8);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.6);
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 20, 147, 0.8);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(255, 20, 147, 0.8);
+}
+
+.project-card a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.5);
+  margin-top: 10px;
+}
+
+/* Gallery navigation buttons */
+.gallery-controls {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.gallery-controls button {
+  background: linear-gradient(135deg, #ff7eb9, #ff49a0);
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  padding: 10px 18px;
+  margin: 0 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 20, 147, 0.6);
+  transition: background 0.3s ease;
+}
+
+.gallery-controls button:hover {
+  background: linear-gradient(135deg, #ff4d9e, #ff0d79);
+}
+
+#backToTop,
+#backToBottom {
+  position: fixed;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  background-color: #7a5f7acc;
+  color: #eee;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(122, 95, 122, 0.7);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+/* Hover effect */
+#backToTop:hover,
+#backToBottom:hover {
+  background-color: #a078a0cc;
+  transform: scale(1.1);
+}
+
+#backToTop {
+  left: 20px;
+  bottom: 70px; /* agak ke atas */
+}
+
+#backToBottom {
+  left: 20px;
+  bottom: 20px;
+}
+
+/* Wave background container */
+.wave-background {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  pointer-events: none; /* biar gak ganggu klik */
+  z-index: -1; /* di bawah semua konten */
+  background: #fff0f5; /* Pink muda sebagai dasar */
+}
+
+/* Basic wave style */
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 200px;
+  background: rgba(255, 105, 180, 0.3); /* pinkish */
+  opacity: 0.6;
+  border-radius: 45%;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: infinite;
+}
+
+/* Wave 1 */
+.wave1 {
+  left: -50%;
+  animation-name: waveMove1;
+  animation-duration: 7000ms;
+  background: rgba(255, 105, 180, 0.4);
+  bottom: 0;
+}
+
+/* Wave 2 */
+.wave2 {
+  left: -60%;
+  animation-name: waveMove2;
+  animation-duration: 10000ms;
+  background: rgba(255, 182, 193, 0.3);
+  bottom: 10px;
+  opacity: 0.5;
+}
+
+/* Wave 3 */
+.wave3 {
+  left: -55%;
+  animation-name: waveMove3;
+  animation-duration: 8000ms;
+  background: rgba(255, 105, 180, 0.2);
+  bottom: 20px;
+  opacity: 0.4;
+}
+
+/* Animasi bergerak gelombang horizontal dan vertikal */
+@keyframes waveMove1 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(25%) translateY(10px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes waveMove2 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(30%) translateY(15px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes waveMove3 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(20%) translateY(7px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+

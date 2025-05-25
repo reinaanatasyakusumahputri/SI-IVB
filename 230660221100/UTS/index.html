@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio 🎀</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+  <style>
+    /* Loading screen styles */
+    #loading-screen {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .cat-img {
+      width: 120px;
+      animation: bounce 1.5s infinite ease-in-out;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+   #loading-screen p {
+  margin-top: 15px;
+  font-family: 'Comic Sans MS', cursive, sans-serif; 
+  font-size: 20px;
+  color: rgb(255, 57, 166);
+  display: inline-block;
+  animation: waveText 2s infinite ease-in-out;
+}
+
+/* Animasi gelombang */
+@keyframes waveText {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-3px); }
+  50% { transform: translateY(3px); }
+  75% { transform: translateY(-2px); }
+}
+
+  </style>
+</head>
+  <body>
+
+  <!-- Wave Animation Background -->
+  <div class="wave-background">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+  </div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <img class="cat-img" src="cat.png" alt="Kucing Putih" />
+    <p>Loading...Please Wait!</p>
+  </div>
+
+  
+  <header>
+    <div class="logo">🌸 Marsya</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">🏠 Home</a></li>
+        <li><a href="#about">🙋‍♀️ About</a></li>
+        <li><a href="#portfolio">📂 Project</a></li>
+        <li><a href="#contact">📧 Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to Top" title="Back to Top">↑</button>
+
+  <!-- Back to Bottom -->
+  <button id="backToBottom" aria-label="Back to Bottom" title="Back to Bottom">↓</button>
+
+  <section id="hero">
+    <img src="marsya.jpg" alt="Profile Photo" />
+    <h1>Marsya Anastasya 🌷</h1>
+    <p>Hi, I am a content creator 💻✨</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/153.5sy/?igsh=MTRrenVwcjVwaXdkYw%3D%3D#">📸 Instagram</a>
+      <a href="https://github.com/230660221100">🐙 GitHub</a>
+    </div>
+  </section>
+
+  <section id="music">
+    <h2>🎵 My Favorite Vibes</h2>
+    <div class="cassette-container">
+      <div class="cassette" id="cassette">🎶</div>
+      <iframe style="border-radius:0 px" src="https://open.spotify.com/embed/track/2sDcIrosoXqiGv1D5OQUvF?utm_source=generator" 
+        width="100%" height="0" frameBorder="0" allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <div class="container">
+    <aside id="about" class="sidebar">
+      <h2>About Me 🌼</h2>
+      <p>Saya adalah mahasiswi aktif dari Universitas Sebelas April, Fakultas Teknologi Informasi, Prodi Sistem Informasi 🌸</p>
+      
+      <div class="sub-section">
+        <h3 class="mini-title">✨ Skills</h3>
+        <div class="skills-slider">
+          <div class="skill-slide">
+            <span>🎤 Public Speaking</span>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+          </div>
+          <div class="skill-slide">
+            <span>🎬 Editing</span>
+            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+          </div>
+          <div class="skill-slide">
+            <span>🈶 Bahasa Asing</span>
+            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-section">
+        <h3 class="mini-title">🎓 Education</h3>
+        <ul class="education-list">
+          <li>(2023-Now) - S1 Sistem Informasi - Universitas Sebelas April</li>
+          <li>(2020-2023) - IPS - SMAN 1 Sumedang</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main-content" id="portfolio">
+      <h2>My Work 🧸</h2>
+
+      <section id="portfolio" class="portfolio-section">
+        <h2>Portfolio Gallery</h2>
+
+        <div class="portfolio-gallery">
+
+  <div class="project-card" data-index="0">
+    <h3>Project YouTube 1</h3>
+    <div class="media-wrapper">
+      <iframe src="https://www.youtube.com/embed/p5fiP5t-j_8?si=0PHrbBHscqv0C5kQ" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="project-card" data-index="1">
+    <h3>Project YouTube 2</h3>
+    <div class="media-wrapper">
+      <iframe src="https://www.youtube.com/embed/7P2rLQVF5rQ?si=MI0kEU_5vHtE2pQh" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="project-card" data-index="2">
+    <h3>Project Image 1</h3>
+    <div class="media-wrapper">
+      <img src="project.jpeg" alt="Project Image 1" />
+    </div>
+  </div>
+
+  <div class="project-card video" data-index="3">
+    <h3>Project Video 1</h3>
+    <div class="media-wrapper">
+      <video src="vid.mp4" controls alt="Project Video 1"></video>
+    </div>
+  </div>
+
+  <div class="project-card" data-index="4">
+    <h3>Project Canva 1</h3>
+    <a href="https://www.canva.com/design/DAGl1S7z62I/ojwsNwuUTkkHD-gg9T35iQ/view?mode=prototype" target="_blank" rel="noopener noreferrer">Open Canva Design</a>
+  </div>
+
+  <div class="project-card" data-index="5">
+    <h3>Project Canva 2</h3>
+    <a href="https://www.canva.com/design/DAGUOAtH8Ck/5mQCYnTsRdHCFaKjS-eOXQ/view?utm_content=DAGUOAtH8Ck&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7edc88cf97" target="_blank" rel="noopener noreferrer">Open Canva Design</a>
+  </div>
+
+  <div class="project-card" data-index="6">
+    <h3>Project Canva 3</h3>
+    <a href="https://www.canva.com/design/DAF4RlnzD0k/kgncDpS3JyhU6CDJuDgoGg/view?utm_content=DAF4RlnzD0k&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h359f19012e" target="_blank" rel="noopener noreferrer">Open Canva Design</a>
+  </div>
+
+  <div class="project-card" data-index="7">
+    <h3>Project Canva 4</h3>
+    <a href="https://www.canva.com/design/DAGFreyaa4k/qVioGQBF_sS2KE3ItPqAiQ/view?utm_content=DAGFreyaa4k&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h144e68699b" target="_blank" rel="noopener noreferrer">Open Canva Design</a>
+  </div>
+
+</div>
+
+
+        <div class="gallery-controls">
+          <button id="scrollLeft" aria-label="Scroll Left">◀</button>
+          <button id="scrollRight" aria-label="Scroll Right">▶</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <section id="contact">
+    <h2>Contact Me 📫</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">💌 Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+
+  <script>
+    // Saat halaman selesai load, sembunyikan loading screen
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+          loadingScreen.style.display = 'none';
+        }
+      }, 2500); // 2.5 detik loading screen
+    });
+  </script>
+
+</body>
+</html>
