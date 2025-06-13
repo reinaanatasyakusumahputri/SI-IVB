@@ -18,6 +18,9 @@ Berikut adalah daftar direktori yang berisi file-file praktikum:
 - **Praktikum 3 - JavaScript**  
   Berisi file-file untuk praktikum ketiga mengenai dasar pemrograman JavaScript.
 
+  - **Praktikum 4 - Reactjs**  
+  Berisi file-file untuk praktikum ke-empat mengenai pengenalan Konsep Inti React.
+
 ---
 
 📌 Setiap direktori praktikum akan berisi file latihan, tugas, atau hasil pekerjaan yang relevan dengan topik praktikum.
