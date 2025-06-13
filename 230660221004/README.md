@@ -1,4 +1,34 @@
-# SI-IVB
+# Praktikum -SI-IVB-
+# Rian Rianto
+# 2306602210004
+
+Repositori ini berisi kumpulan file praktikum yang dikerjakan oleh *Rian Rianto* sebagai bagian dari mata kuliah di program studi *Sistem Informasi (SI-IVB)*.
+
+## 📁 Daftar Praktikum
+
+Berikut adalah daftar direktori yang berisi file-file praktikum:
+
+- *Portofolio*  
+  Berisi file-file yang berkaitan dengan pengembangan portofolio web pribadi.
+
+- *Praktikum 1 - HTML*  
+  Berisi file-file untuk praktikum pertama mengenai dasar-dasar HTML.
+
+- *Praktikum 2 - CSS*  
+  Berisi file-file untuk praktikum kedua mengenai Cascading Style Sheets (CSS).
+
+- *Praktikum 3 - JavaScript*  
+ 
+
+  - *Praktikum 4 - Reactjs*  
+  Berisi file-file untuk praktikum ketiga mengenai dasar pemrograman JavaScript.
+
+---
+
+📌 Setiap direktori praktikum akan berisi file latihan, tugas, atau hasil pekerjaan yang relevan dengan topik praktikum.
+
+
+Laporan screenshot UTS 
 ![hasil](https://github.com/user-attachments/assets/9e897d6b-0d3b-45dc-92a5-e4feba8e5a70)
 ![Screenshot 2025-05-23 140746](https://github.com/user-attachments/assets/3a3cb209-9c8a-4b11-b54c-99144043a1f8)
 ![Screenshot 2025-05-23 140836](https://github.com/user-attachments/assets/aa9e9f95-5031-48aa-8fcb-60ea6b937738)
