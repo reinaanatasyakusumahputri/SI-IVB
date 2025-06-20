@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh JSX di React</title>
+
+    <!-- Load React dan ReactDOM dari CDN (React 18) -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!-- Load Babel untuk mendukung JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Gunakan id="root" sesuai standar React -->
+    <div id="root"></div>
+
+    <script type="text/babel">
+      // --- CONTOH 1: Komponen TANPA JSX ---
+      function TombolTanpaJSX() {
+        return React.createElement("h2", {}, "Ini dibuat tanpa JSX");
+      }
+
+      // --- CONTOH 2: Komponen DENGAN JSX ---
+      function TombolDenganJSX() {
+        return <h2>Saya dibuat dengan JSX! ❤️</h2>;
+      }
+
+      // --- Komponen Utama ---
+      function App() {
+        return (
+          <div>
+            <h1>Perbandingan JSX dan Tanpa JSX</h1>
+            <hr />
+            <TombolTanpaJSX />
+            <TombolDenganJSX />
+          </div>
+        );
+      }
+
+      // Render ke dalam elemen dengan id="root"
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+      root.render(<App />);
+    </script>
+  </body>
+</html>

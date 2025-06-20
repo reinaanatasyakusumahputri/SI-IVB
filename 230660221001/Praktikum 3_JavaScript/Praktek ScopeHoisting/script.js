@@ -9,9 +9,8 @@ function showGreeting() {
 function localScopeExample() {
   let message = "Hello Local!";
   console.log(message); // OK
-  // console.log(greeting); // OK juga karena greeting global
+  console.log(greeting); // OK juga karena greeting global
 }
-// console.log(message); // ❌ Error - message hanya ada di dalam fungsi
 
 // ========== BLOCK SCOPE ==========
 function blockScopeExample() {
@@ -54,17 +53,12 @@ function hoistingLetConst() {
 }
 
 // ========== HOISTING FUNCTION ==========
-functionHoisting(); // ✅ OK karena deklarasi function di-hoist
-
 function functionHoisting() {
   console.log("Function Hoisted!");
 }
 
 // ========== HOISTING CLASS ==========
 function hoistingClassExample() {
-  const myCar = new Car();
-  myCar.displayMake();
-
   class Car {
     constructor() {
       this.make = "Toyota";
@@ -74,10 +68,15 @@ function hoistingClassExample() {
       console.log("Merek Mobil:", this.make);
     }
   }
+
+  const myCar = new Car();
+  myCar.displayMake();
 }
 
 // ========== Trigger dari HTML ==========
 function runScopeExamples() {
+  console.clear();
+  console.log("=== Scope Examples ===");
   showGreeting();
   localScopeExample();
   blockScopeExample();
@@ -85,7 +84,10 @@ function runScopeExamples() {
 }
 
 function runHoistingExamples() {
+  console.clear();
+  console.log("=== Hoisting Examples ===");
   hoistingVariableExample();
   hoistingLetConst();
+  functionHoisting();
   hoistingClassExample();
 }
